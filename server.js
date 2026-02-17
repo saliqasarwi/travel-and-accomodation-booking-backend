@@ -135,7 +135,20 @@ app.get("/api/hotels/:id/gallery", (req, res) => {
 });
 
 app.get("/api/hotels/:id", (req, res) => {
-  res.json(getJsonData("hotelId.json"));
+  const hotels = getJsonData("hotels.json");
+  const id = Number(req.params.id);
+
+  const hotel = hotels.find((h) => Number(h.id) === id);
+
+  if (!hotel) {
+    return res.status(404).json({ message: "Hotel not found" });
+  }
+
+  // normalize fields if your data uses hotelName vs name
+  res.json({
+    ...hotel,
+    hotelName: hotel.hotelName || hotel.name,
+  });
 });
 
 app.get("/api/hotels/:id/available-rooms", (req, res) => {
@@ -147,42 +160,58 @@ app.get("/api/hotels/:id/reviews", (req, res) => {
 });
 
 app.post("/api/bookings", (req, res) => {
-  res.json(getJsonData("reviews.json"));
+  const bookingId = Date.now(); 
+  res.json({
+    bookingId,
+    confirmationNumber: `CNF-${bookingId}`,
+    status: "Confirmed",
+  });
 });
 
 app.get("/api/bookings/:id", (req, res) => {
   res.json(getJsonData("bookings.json"));
 });
 
-app.get("/api/home/search", async (req, res) => {
-  const { city, checkInDate, checkOutDate, adults, children, numberOfRooms } =
-    req.query;
+app.get("/api/home/search", (req, res) => {
+  console.log("SEARCH req.query =", req.query);
+
+  let { city, adults, children, numberOfRooms } = req.query; 
+
+  // normalize
+  city = typeof city === "string" ? city.trim() : city;
+
+  // IMPORTANT: if frontend accidentally sends "undefined" or "null" as strings
+  if (city === "undefined" || city === "null" || city === "") {
+    city = undefined;
+  }
+
   const rooms = getJsonData("searchResults.json");
   let filteredResults = rooms;
+
   if (city) {
-    filteredResults = filteredResults.filter((room) =>
-      room.cityName.toLowerCase().includes(city.toLowerCase())
-    );
-  }
-
-  if (adults) {
-    filteredResults = filteredResults.filter((room) => {
-      return room.numberOfAdults >= adults;
-    });
-  }
-
-  if (children) {
     filteredResults = filteredResults.filter(
-      (room) => room.numberOfChildren >= children
+      (room) =>
+        typeof room.cityName === "string" &&
+        room.cityName.toLowerCase().includes(city.toLowerCase())
     );
   }
 
-  if (numberOfRooms) {
-    filteredResults = filteredResults.filter(
-      (room) => room.numberOfRooms >= numberOfRooms
-    );
+  // convert to numbers (because req.query values are strings)
+  const adultsNum = adults != null ? Number(adults) : undefined;
+  const childrenNum = children != null ? Number(children) : undefined;
+  const roomsNum = numberOfRooms != null ? Number(numberOfRooms) : undefined;
+
+  if (!Number.isNaN(adultsNum) && adultsNum !== undefined) {
+    filteredResults = filteredResults.filter((room) => room.numberOfAdults >= adultsNum);
+  }
+  if (!Number.isNaN(childrenNum) && childrenNum !== undefined) {
+    filteredResults = filteredResults.filter((room) => room.numberOfChildren >= childrenNum);
+  }
+  if (!Number.isNaN(roomsNum) && roomsNum !== undefined) {
+    filteredResults = filteredResults.filter((room) => room.numberOfRooms >= roomsNum);
   }
 
+  console.log("SEARCH results count =", filteredResults.length);
   res.json(filteredResults);
 });
 
