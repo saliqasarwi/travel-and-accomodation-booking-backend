@@ -1,8 +1,9 @@
 [
   {
     "roomId": 201,
-    "roomNumber": 101,
-    "roomPhotoUrl": "https://example.com/room1.jpg",
+    "hotelId": 2,
+    "roomNumber": "101",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1576354302919-96748cb8299e?auto=format&fit=crop&q=80",
     "roomType": "Deluxe Suite",
     "capacityOfAdults": 2,
     "capacityOfChildren": 2,
@@ -15,7 +16,7 @@
       {
         "id": 2,
         "name": "Air Conditioning",
-        "description": "Individually controlled air conditioning"
+        "description": "Individually controlled"
       }
     ],
     "price": 250.0,
@@ -23,8 +24,9 @@
   },
   {
     "roomId": 202,
-    "roomNumber": 102,
-    "roomPhotoUrl": "https://example.com/room2.jpg",
+    "hotelId": 2,
+    "roomNumber": "102",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80",
     "roomType": "Standard Room",
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
@@ -32,7 +34,7 @@
       {
         "id": 3,
         "name": "Flat-screen TV",
-        "description": "Includes international channels"
+        "description": "International channels"
       }
     ],
     "price": 150.0,
@@ -40,8 +42,9 @@
   },
   {
     "roomId": 203,
-    "roomNumber": 103,
-    "roomPhotoUrl": "https://example.com/room3.jpg",
+    "hotelId": 2,
+    "roomNumber": "103",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80",
     "roomType": "Executive Suite",
     "capacityOfAdults": 3,
     "capacityOfChildren": 2,
@@ -49,12 +52,12 @@
       {
         "id": 4,
         "name": "Mini Bar",
-        "description": "Stocked with beverages and snacks"
+        "description": "Stocked beverages/snacks"
       },
       {
         "id": 5,
         "name": "Balcony",
-        "description": "Private balcony with sea view"
+        "description": "Private with view"
       }
     ],
     "price": 350.0,
@@ -62,8 +65,9 @@
   },
   {
     "roomId": 204,
-    "roomNumber": 104,
-    "roomPhotoUrl": "https://example.com/room4.jpg",
+    "hotelId": 1,
+    "roomNumber": "104",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792a0327d?auto=format&fit=crop&q=80",
     "roomType": "Family Room",
     "capacityOfAdults": 4,
     "capacityOfChildren": 3,
@@ -71,7 +75,7 @@
       {
         "id": 6,
         "name": "Kitchenette",
-        "description": "Includes a microwave and fridge"
+        "description": "Microwave and fridge"
       }
     ],
     "price": 400.0,
@@ -79,8 +83,9 @@
   },
   {
     "roomId": 205,
-    "roomNumber": 105,
-    "roomPhotoUrl": "https://example.com/room5.jpg",
+    "hotelId": 4,
+    "roomNumber": "105",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80",
     "roomType": "Luxury Suite",
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
@@ -88,12 +93,12 @@
       {
         "id": 7,
         "name": "Jacuzzi",
-        "description": "Private in-room Jacuzzi"
+        "description": "Private in-room"
       },
       {
         "id": 8,
         "name": "Smart TV",
-        "description": "Netflix and streaming services included"
+        "description": "Streaming services"
       }
     ],
     "price": 500.0,
@@ -101,8 +106,9 @@
   },
   {
     "roomId": 206,
-    "roomNumber": 106,
-    "roomPhotoUrl": "https://example.com/room6.jpg",
+    "hotelId": 4,
+    "roomNumber": "106",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
     "roomType": "Presidential Suite",
     "capacityOfAdults": 5,
     "capacityOfChildren": 3,
@@ -110,7 +116,7 @@
       {
         "id": 9,
         "name": "Private Pool",
-        "description": "Infinity pool with ocean view"
+        "description": "Infinity with view"
       }
     ],
     "price": 1000.0,
@@ -118,8 +124,9 @@
   },
   {
     "roomId": 207,
-    "roomNumber": 107,
-    "roomPhotoUrl": "https://example.com/room7.jpg",
+    "hotelId": 3,
+    "roomNumber": "107",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80",
     "roomType": "Standard Room",
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
@@ -127,7 +134,7 @@
       {
         "id": 10,
         "name": "Coffee Maker",
-        "description": "Complimentary coffee and tea"
+        "description": "Complimentary coffee/tea"
       }
     ],
     "price": 120.0,
@@ -135,8 +142,9 @@
   },
   {
     "roomId": 208,
-    "roomNumber": 108,
-    "roomPhotoUrl": "https://example.com/room8.jpg",
+    "hotelId": 5,
+    "roomNumber": "108",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80",
     "roomType": "Deluxe Room",
     "capacityOfAdults": 3,
     "capacityOfChildren": 1,
@@ -144,7 +152,7 @@
       {
         "id": 11,
         "name": "24/7 Room Service",
-        "description": "Round-the-clock dining services"
+        "description": "Round-the-clock dining"
       }
     ],
     "price": 220.0,
@@ -152,8 +160,9 @@
   },
   {
     "roomId": 209,
-    "roomNumber": 109,
-    "roomPhotoUrl": "https://example.com/room9.jpg",
+    "hotelId": 7,
+    "roomNumber": "109",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792a0327d?auto=format&fit=crop&q=80",
     "roomType": "Twin Room",
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
@@ -161,7 +170,7 @@
       {
         "id": 12,
         "name": "Laundry Service",
-        "description": "Same-day laundry and dry cleaning"
+        "description": "Same-day service"
       }
     ],
     "price": 180.0,
@@ -169,8 +178,9 @@
   },
   {
     "roomId": 210,
-    "roomNumber": 110,
-    "roomPhotoUrl": "https://example.com/room10.jpg",
+    "hotelId": 9,
+    "roomNumber": "110",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80",
     "roomType": "Penthouse Suite",
     "capacityOfAdults": 6,
     "capacityOfChildren": 4,
@@ -178,7 +188,7 @@
       {
         "id": 13,
         "name": "Private Chef",
-        "description": "Exclusive private dining experience"
+        "description": "Exclusive dining"
       }
     ],
     "price": 2000.0,

@@ -245,8 +245,14 @@ app.get("/api/cities", (req, res) => {
 });
 
 app.get("/api/hotels/:id/rooms", (req, res) => {
-  res.json(getJsonData("rooms.json"));
+  const rooms = getJsonData("rooms.json");
+  const id = Number(req.params.id);
+
+  const hotelRooms = rooms.filter((r) => Number(r.hotelId) === id);
+  res.json(hotelRooms);
 });
+
+
 
 app.put("/api/cities/:id", (req, res) => {
   const newData = {
