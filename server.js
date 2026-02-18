@@ -146,8 +146,10 @@ app.get("/api/hotels/:id", (req, res) => {
     description: hotel.description,
     amenities: hotel.amenities ?? [],
     starRating: hotel.starRating,
-    availableRooms: (hotel.rooms ?? []).filter((r) => r.available).length,
-    imageUrl: hotel.imageUrl ?? hotel.thumbnailUrl ?? "",
+    latitude: hotel.latitude,      
+    longitude: hotel.longitude,
+    availableRooms:hotel.availableRooms,
+    imageUrl: hotel.imageUrl,
   });
 });
 
