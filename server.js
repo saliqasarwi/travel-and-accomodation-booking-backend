@@ -139,17 +139,18 @@ app.get("/api/hotels/:id", (req, res) => {
   const id = Number(req.params.id);
 
   const hotel = hotels.find((h) => Number(h.id) === id);
-
-  if (!hotel) {
-    return res.status(404).json({ message: "Hotel not found" });
-  }
-
-  // normalize fields if your data uses hotelName vs name
+  if (!hotel) return res.status(404).json({ message: "Hotel not found" });
   res.json({
-    ...hotel,
-    hotelName: hotel.hotelName || hotel.name,
+    hotelName: hotel.hotelName,
+    location: hotel.location,
+    description: hotel.description,
+    amenities: hotel.amenities ?? [],
+    starRating: hotel.starRating,
+    availableRooms: (hotel.rooms ?? []).filter((r) => r.available).length,
+    imageUrl: hotel.imageUrl ?? hotel.thumbnailUrl ?? "",
   });
 });
+
 
 app.get("/api/hotels/:id/available-rooms", (req, res) => {
   res.json(getJsonData("availableRooms.json"));
@@ -160,16 +161,36 @@ app.get("/api/hotels/:id/reviews", (req, res) => {
 });
 
 app.post("/api/bookings", (req, res) => {
-  const bookingId = Date.now(); 
-  res.json({
+  const bookingId = Date.now();
+
+  const booking = {
     bookingId,
     confirmationNumber: `CNF-${bookingId}`,
-    status: "Confirmed",
+    bookingStatus: "Confirmed",
+    createdAt: new Date().toISOString(),
+    request: req.body,
+  };
+
+  const filePath = path.join(__dirname, "data", "bookings.json");
+  fs.writeFileSync(filePath, JSON.stringify(booking, null, 2), "utf8");
+
+  res.json({
+    bookingId,
+    confirmationNumber: booking.confirmationNumber,
   });
 });
 
+
+
 app.get("/api/bookings/:id", (req, res) => {
-  res.json(getJsonData("bookings.json"));
+  const data = getJsonData("bookings.json");
+  const id = Number(req.params.id);
+
+  if (!data || Number(data.bookingId) !== id) {
+    return res.status(404).json({ message: "Booking not found" });
+  }
+
+  res.json(data);
 });
 
 app.get("/api/home/search", (req, res) => {
