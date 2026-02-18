@@ -153,7 +153,9 @@ app.get("/api/hotels/:id", (req, res) => {
 
 
 app.get("/api/hotels/:id/available-rooms", (req, res) => {
-  res.json(getJsonData("availableRooms.json"));
+  const hotelId=Number(req.params.id);
+  const rooms=getJsonData("rooms.json");
+  res.json(rooms.filter((r)=>Number(r.hotelId)===hotelId&&r.availability));
 });
 
 app.get("/api/hotels/:id/reviews", (req, res) => {
