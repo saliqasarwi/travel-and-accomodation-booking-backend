@@ -255,7 +255,25 @@ app.get("/api/hotels/:id/rooms", (req, res) => {
   const hotelRooms = rooms.filter((r) => Number(r.hotelId) === id);
   res.json(hotelRooms);
 });
+app.get("/api/cities", (req, res) => {
+  let cities = getJsonData("cities.json");
 
+  const { cityName, country } = req.query;
+
+  if (cityName) {
+    cities = cities.filter((c) =>
+      c.name?.toLowerCase().includes(cityName.toLowerCase())
+    );
+  }
+
+  if (country) {
+    cities = cities.filter((c) =>
+      c.country?.toLowerCase().includes(country.toLowerCase())
+    );
+  }
+
+  res.json(cities);
+});
 
 
 app.put("/api/cities/:id", (req, res) => {
