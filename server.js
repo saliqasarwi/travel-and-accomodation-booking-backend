@@ -323,7 +323,13 @@ app.post("/api/rooms", (req, res) => {
   });
   res.json(getJsonData("rooms.json"));
 });
-
+app.get("/api/admin/navigation", (req, res) => {
+  res.json([
+    { label: "Cities", path: "/admin/cities" },
+    { label: "Hotels", path: "/admin/hotels" },
+    { label: "Rooms", path: "/admin/rooms" },
+  ]);
+});
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
