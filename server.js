@@ -308,7 +308,31 @@ app.post("/api/hotels", (req, res) => {
 
   res.json(getJsonData("hotels.json"));
 });
+app.get("/api/rooms", (req, res) => {
+  let rooms = getJsonData("rooms.json");
 
+  const { roomNumber, hotel, city } = req.query;
+
+  if (roomNumber) {
+    rooms = rooms.filter((r) =>
+      String(r.roomNumber).includes(roomNumber)
+    );
+  }
+
+  if (hotel) {
+    rooms = rooms.filter((r) =>
+      r.hotelName?.toLowerCase().includes(hotel.toLowerCase())
+    );
+  }
+
+  if (city) {
+    rooms = rooms.filter((r) =>
+      r.city?.toLowerCase().includes(city.toLowerCase())
+    );
+  }
+
+  res.json(rooms);
+});
 app.put("/api/rooms/:id", (req, res) => {
   const newData = {
     id: Number(req.params.id),
