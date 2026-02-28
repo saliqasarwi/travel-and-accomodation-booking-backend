@@ -105,29 +105,23 @@ app.get("/api/home/destinations/trending", (req, res) => {
 });
 
 app.get("/api/hotels", (req, res) => {
-  const hotels = getJsonData("hotels.json");
-  const { searchQuery = "", pageNumber = 1, pageSize = 5 } = req.query;
-  let filteredHotels = hotels;
-  if (searchQuery) {
-    filteredHotels = filteredHotels.filter(
-      (hotel) =>
-        (hotel.hotelName &&
-          hotel.hotelName.toLowerCase().includes(searchQuery.toLowerCase())) ||
-        (hotel.name &&
-          hotel.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
-        hotel.description.toLowerCase().includes(searchQuery.toLowerCase())
+  let hotels = getJsonData("hotels.json");
+
+  const { hotelName, city } = req.query;
+
+  if (hotelName) {
+    hotels = hotels.filter((h) =>
+      h.name?.toLowerCase().includes(hotelName.toLowerCase())
     );
   }
-  const startIndex = (pageNumber - 1) * pageSize;
-  const endIndex = startIndex + parseInt(pageSize);
-  filteredHotels = filteredHotels.map((hotel) => {
-    return {
-      ...hotel,
-      name: hotel.hotelName || hotel.name,
-    };
-  });
-  const paginatedHotels = filteredHotels.slice(startIndex, endIndex);
-  res.json(paginatedHotels);
+
+  if (city) {
+    hotels = hotels.filter((h) =>
+      h.city?.toLowerCase().includes(city.toLowerCase())
+    );
+  }
+
+  res.json(hotels);
 });
 
 app.get("/api/hotels/:id/gallery", (req, res) => {
@@ -243,11 +237,6 @@ app.get("/api/home/search", (req, res) => {
 app.get("/api/search-results/amenities", (req, res) => {
   res.json(getJsonData("amenities.json"));
 });
-
-app.get("/api/cities", (req, res) => {
-  res.json(getJsonData("cities.json"));
-});
-
 app.get("/api/hotels/:id/rooms", (req, res) => {
   const rooms = getJsonData("rooms.json");
   const id = Number(req.params.id);
