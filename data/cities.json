@@ -1,22 +1,122 @@
 [
   {
-    "id": 3,
-    "name": "Tokyo",
-    "description": "The bustling capital of Japan, known for its advanced technology, shopping, and unique blend of old and new."
-  },
-  {
     "id": 4,
     "name": "London",
+    "country": "United Kingdom",
+    "postOffice": "London Chief Office",
+    "numberOfHotels": 125,
+    "createdAt": "2023-05-12T09:15:30Z",
+    "modifiedAt": "2026-03-23T02:15:56.708Z",
     "description": "The capital of England, famous for its historical landmarks, museums, and theaters."
   },
   {
     "id": 5,
     "name": "Rome",
+    "country": "Italy",
+    "postOffice": "Roma Centro",
+    "numberOfHotels": 129,
+    "createdAt": "2023-06-20T11:40:00Z",
+    "modifiedAt": "2026-03-05T22:24:35.739Z",
     "description": "The capital of Italy, known for its ancient history, stunning architecture, and delicious food."
   },
   {
     "id": 6,
     "name": "Paris",
+    "country": "France",
+    "postOffice": "Paris-Louvre",
+    "numberOfHotels": 1850,
+    "createdAt": "2023-04-08T08:30:15Z",
+    "modifiedAt": "2026-03-01T10:05:12Z",
     "description": "good place"
+  },
+  {
+    "id": 7,
+    "name": "Tokyo",
+    "country": "Japan",
+    "postOffice": "Tokyo Central Post Office",
+    "numberOfHotels": 2100,
+    "createdAt": "2024-01-15T03:20:00Z",
+    "modifiedAt": "2026-02-28T07:45:33Z",
+    "description": "Vibrant metropolis blending ultramodern and traditional elements."
+  },
+  {
+    "id": 8,
+    "name": "New York",
+    "country": "United States",
+    "postOffice": "James A. Farley Building",
+    "numberOfHotels": 740,
+    "createdAt": "2023-09-30T14:10:55Z",
+    "modifiedAt": "2026-01-20T19:30:01Z",
+    "description": "The city that never sleeps — iconic skyline, culture, and energy."
+  },
+  {
+    "id": 9,
+    "name": "Istanbul",
+    "country": "Turkey",
+    "postOffice": "Istanbul Sirkeci",
+    "numberOfHotels": 1450,
+    "createdAt": "2024-03-10T10:25:40Z",
+    "modifiedAt": "2025-12-12T13:55:19Z",
+    "description": "Where Europe meets Asia — rich history, bazaars, and stunning mosques."
+  },
+  {
+    "id": 10,
+    "name": "Bangkok",
+    "country": "Thailand",
+    "postOffice": "Bangkok General Post Office",
+    "numberOfHotels": 3200,
+    "createdAt": "2023-07-05T07:45:20Z",
+    "modifiedAt": "2026-03-02T11:15:50Z",
+    "description": "Vibrant capital known for ornate temples, bustling markets, and legendary street food."
+  },
+  {
+    "id": 11,
+    "name": "Dubai",
+    "country": "United Arab Emirates",
+    "postOffice": "Dubai Central Post Office",
+    "numberOfHotels": 1800,
+    "createdAt": "2024-02-14T13:10:00Z",
+    "modifiedAt": "2026-01-10T09:30:15Z",
+    "description": "Futuristic city of skyscrapers, luxury shopping, and desert adventures."
+  },
+  {
+    "id": 12,
+    "name": "Hong Kong",
+    "country": "Hong Kong",
+    "postOffice": "Hong Kong General Post Office",
+    "numberOfHotels": 1600,
+    "createdAt": "2023-11-22T04:55:10Z",
+    "modifiedAt": "2026-02-15T18:40:30Z",
+    "description": "Dynamic harbor city famous for skyline views, dim sum, and vibrant nightlife."
+  },
+  {
+    "id": 13,
+    "name": "Barcelona",
+    "country": "Spain",
+    "postOffice": "Barcelona Central Post Office",
+    "numberOfHotels": 950,
+    "createdAt": "2024-05-30T16:20:45Z",
+    "modifiedAt": "2025-10-08T12:25:00Z",
+    "description": "Mediterranean gem with Gaudí architecture, beaches, and lively culture."
+  },
+  {
+    "id": 14,
+    "name": "Singapore",
+    "country": "Singapore",
+    "postOffice": "Singapore Post Centre",
+    "numberOfHotels": 1400,
+    "createdAt": "2023-10-18T10:05:55Z",
+    "modifiedAt": "2026-03-03T08:50:22Z",
+    "description": "Ultra-modern city-state blending gardens, cuisine, and futuristic architecture."
+  },
+  {
+    "id": 15,
+    "name": "Sydney",
+    "country": "Australia",
+    "postOffice": "Sydney General Post Office",
+    "numberOfHotels": 1100,
+    "createdAt": "2024-04-01T02:30:00Z",
+    "modifiedAt": "2025-09-20T14:15:40Z",
+    "description": "Iconic Opera House, stunning harbor, and beach lifestyle."
   }
 ]

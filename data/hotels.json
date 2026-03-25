@@ -2,15 +2,11 @@
   {
     "id": 1,
     "hotelName": "Sunset Resort",
-    "location": "Bali, Indonesia",
-    "description": "A luxurious resort overlooking the ocean with top-notch amenities and breathtaking views.",
-    "hotelType": "Resort",
     "starRating": 5,
-    "latitude": -8.3405,
-    "longitude": 115.0915,
-    "imageUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
     "availableRooms": 10,
-    "cityId": 101,
+    "location": "Bali, Indonesia",
+    "description": "A luxurious resort overlooking the ocean with top-notch amenities and breathtaking sunset views.",
+    "imageUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
@@ -27,20 +23,22 @@
         "name": "Spa",
         "description": "Full-service spa offering massages and treatments."
       }
-    ]
+    ],
+    "createdAt": "2023-02-15T10:30:00Z",
+    "modifiedAt": "2025-11-20T14:45:00Z",
+    "hotelType": "Resort",
+    "cityId": 101,
+    "latitude": -8.3405,
+    "longitude": 115.0915
   },
   {
     "id": 2,
     "hotelName": "Mountain Retreat",
-    "location": "Swiss Alps, Switzerland",
-    "description": "A serene mountain retreat offering panoramic views of the Alps and a perfect escape from city life.",
-    "hotelType": "Boutique",
     "starRating": 4,
-    "latitude": 46.8182,
-    "longitude": 8.2275,
-    "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80",
     "availableRooms": 8,
-    "cityId": 102,
+    "location": "Swiss Alps, Switzerland",
+    "description": "A peaceful mountain retreat with panoramic alpine views and a cozy escape from city life.",
+    "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
@@ -57,20 +55,22 @@
         "name": "Sauna",
         "description": "Traditional sauna for relaxation."
       }
-    ]
+    ],
+    "createdAt": "2023-04-10T09:15:22Z",
+    "modifiedAt": "2026-01-05T16:20:10Z",
+    "hotelType": "Boutique",
+    "cityId": 102,
+    "latitude": 46.8182,
+    "longitude": 8.2275
   },
   {
     "id": 3,
     "hotelName": "City Center Inn",
-    "location": "New York, USA",
-    "description": "A modern hotel in the heart of New York City with convenient access to attractions, shopping, and restaurants.",
-    "hotelType": "Hotel",
     "starRating": 3,
-    "latitude": 40.7128,
-    "longitude": -74.006,
-    "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80",
     "availableRooms": 15,
-    "cityId": 103,
+    "location": "New York, USA",
+    "description": "A modern hotel in the heart of the city with convenient access to shopping, dining, and attractions.",
+    "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
@@ -87,50 +87,54 @@
         "name": "Restaurant",
         "description": "On-site dining with city views."
       }
-    ]
+    ],
+    "createdAt": "2023-07-22T13:40:00Z",
+    "modifiedAt": "2025-12-18T11:55:30Z",
+    "hotelType": "Hotel",
+    "cityId": 103,
+    "latitude": 40.7128,
+    "longitude": -74.006
   },
   {
     "id": 4,
     "hotelName": "Tropical Paradise",
-    "location": "Maldives",
-    "description": "An exclusive resort on a private island with overwater bungalows and tropical getaway vibes.",
-    "hotelType": "Resort",
     "starRating": 5,
-    "latitude": -2.9737,
-    "longitude": 73.5367,
-    "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "availableRooms": 6,
-    "cityId": 104,
+    "location": "Maldives",
+    "description": "An exclusive island resort with overwater villas, crystal-clear waters, and tropical luxury.",
+    "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
         "name": "Private Beach",
-        "description": "Exclusive beach access."
+        "description": "Exclusive beach access for guests."
       },
       {
         "id": 2,
         "name": "Water Sports",
-        "description": "Snorkeling, diving, and more."
+        "description": "Snorkeling, diving, and ocean activities."
       },
       {
         "id": 3,
         "name": "Sunset Dining",
-        "description": "Fine dining with ocean views."
+        "description": "Fine dining with panoramic sea views."
       }
-    ]
+    ],
+    "createdAt": "2024-01-08T08:20:45Z",
+    "modifiedAt": "2026-02-10T17:30:15Z",
+    "hotelType": "Resort",
+    "cityId": 104,
+    "latitude": -2.9737,
+    "longitude": 73.5367
   },
   {
     "id": 5,
     "hotelName": "Urban Suites",
-    "location": "Tokyo, Japan",
-    "description": "Modern suite-style hotel in vibrant Tokyo with luxury accommodations.",
-    "hotelType": "Hotel",
     "starRating": 4,
-    "latitude": 35.6762,
-    "longitude": 139.6503,
-    "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
     "availableRooms": 12,
-    "cityId": 105,
+    "location": "Tokyo, Japan",
+    "description": "A stylish suite hotel in vibrant Tokyo offering modern comfort and easy access to the city.",
+    "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
@@ -140,163 +144,307 @@
       {
         "id": 2,
         "name": "Room Service",
-        "description": "Available 24/7."
+        "description": "Available around the clock."
       },
       {
         "id": 3,
         "name": "Rooftop Bar",
-        "description": "Skyline cocktails."
+        "description": "Drinks with skyline views."
       }
-    ]
+    ],
+    "createdAt": "2023-09-05T11:10:00Z",
+    "modifiedAt": "2026-03-01T09:45:20Z",
+    "hotelType": "Hotel",
+    "cityId": 105,
+    "latitude": 35.6762,
+    "longitude": 139.6503
   },
   {
     "id": 6,
     "hotelName": "Desert Oasis Resort",
-    "location": "Dubai, UAE",
-    "description": "Luxurious desert resort with tranquility and spectacular dune views.",
-    "hotelType": "Resort",
     "starRating": 5,
-    "latitude": 25.276987,
-    "longitude": 55.296249,
-    "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "availableRooms": 8,
-    "cityId": 106,
+    "location": "Dubai, UAE",
+    "description": "A luxury desert resort offering tranquility, dune views, and elegant Arabian hospitality.",
+    "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
         "name": "Private Pool",
-        "description": "Many villas with private pools."
+        "description": "Many villas feature their own private pool."
       },
       {
         "id": 2,
         "name": "Camel Ride",
-        "description": "Desert adventures."
+        "description": "Traditional desert adventure experience."
       },
       {
         "id": 3,
         "name": "Luxury Spa",
-        "description": "Desert-themed treatments."
+        "description": "Relaxing treatments inspired by the desert."
       }
-    ]
+    ],
+    "createdAt": "2024-03-14T15:25:30Z",
+    "modifiedAt": "2025-10-22T12:10:55Z",
+    "hotelType": "Resort",
+    "cityId": 106,
+    "latitude": 25.276987,
+    "longitude": 55.296249
   },
   {
     "id": 7,
     "hotelName": "Coastal Breeze",
-    "location": "San Diego, USA",
-    "description": "Charming coastal hotel near the beach with relaxing vibes.",
-    "hotelType": "Hotel",
     "starRating": 4,
-    "latitude": 32.7157,
-    "longitude": -117.1611,
-    "imageUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
     "availableRooms": 10,
-    "cityId": 107,
+    "location": "San Diego, USA",
+    "description": "A charming coastal hotel near the beach with relaxed vibes and ocean-inspired comfort.",
+    "imageUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
         "name": "Beach Access",
-        "description": "Private beach steps away."
+        "description": "Private beach steps away from the hotel."
       },
       {
         "id": 2,
         "name": "Beach Bar",
-        "description": "Sunset drinks."
+        "description": "Sunset drinks by the shore."
       },
       {
         "id": 3,
         "name": "Outdoor Jacuzzi",
-        "description": "Ocean-view relaxation."
+        "description": "Ocean-view relaxation area."
       }
-    ]
-  },
-  {
-    "id": 8,
-    "hotelName": "Forest Lodge",
-    "location": "Whistler, Canada",
-    "description": "Cozy rustic lodge in the forest for nature and winter sports lovers.",
-    "hotelType": "Lodge",
-    "starRating": 3,
-    "latitude": 50.1163,
-    "longitude": -122.9574,
-    "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80",
-    "availableRooms": 6,
-    "cityId": 108,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Ski Storage",
-        "description": "Convenient for guests."
-      },
-      {
-        "id": 2,
-        "name": "Outdoor Fireplace",
-        "description": "Evening warmth."
-      },
-      {
-        "id": 3,
-        "name": "Guided Tours",
-        "description": "Hikes and snowshoeing."
-      }
-    ]
+    ],
+    "createdAt": "2023-11-30T07:50:10Z",
+    "modifiedAt": "2026-01-15T18:40:00Z",
+    "hotelType": "Hotel",
+    "cityId": 107,
+    "latitude": 32.7157,
+    "longitude": -117.1611
   },
   {
     "id": 9,
     "hotelName": "Grand Plaza Hotel",
-    "location": "Paris, France",
-    "description": "Luxurious city-center hotel with Eiffel Tower views.",
-    "hotelType": "Hotel",
     "starRating": 5,
-    "latitude": 48.8566,
-    "longitude": 2.3522,
-    "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
     "availableRooms": 10,
-    "cityId": 109,
+    "location": "Paris, France",
+    "description": "An elegant city-center hotel with premium service and unforgettable Parisian charm.",
+    "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Eiffel Tower Views",
-        "description": "From select rooms."
+        "name": "City Views",
+        "description": "Beautiful views from selected rooms."
       },
       {
         "id": 2,
-        "name": "Gourmet Restaurant",
-        "description": "World-class French cuisine."
+        "name": "Fine Dining",
+        "description": "Refined French cuisine on site."
       },
       {
         "id": 3,
-        "name": "Helicopter Tours",
-        "description": "City aerial experiences."
+        "name": "Luxury Lounge",
+        "description": "Exclusive guest lounge for relaxation."
       }
-    ]
+    ],
+    "createdAt": "2023-08-25T12:05:55Z",
+    "modifiedAt": "2026-02-28T10:15:40Z",
+    "hotelType": "Hotel",
+    "cityId": 109,
+    "latitude": 48.8566,
+    "longitude": 2.3522
   },
   {
     "id": 10,
     "hotelName": "Safari Lodge",
-    "location": "Kruger National Park, South Africa",
-    "description": "Exclusive lodge with luxury safari experiences and wildlife.",
-    "hotelType": "Lodge",
     "starRating": 5,
-    "latitude": -24.0127,
-    "longitude": 31.5604,
-    "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "availableRooms": 5,
-    "cityId": 110,
+    "location": "Kruger National Park, South Africa",
+    "description": "An exclusive safari lodge offering luxury accommodation and unforgettable wildlife experiences.",
+    "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
         "name": "Safari Drives",
-        "description": "Daily wildlife viewing."
+        "description": "Daily guided wildlife viewing."
       },
       {
         "id": 2,
         "name": "Outdoor Dining",
-        "description": "Savannah views."
+        "description": "Meals with savannah views."
       },
       {
         "id": 3,
         "name": "Game Walks",
-        "description": "Guided intimate safaris."
+        "description": "Guided close-up nature experiences."
       }
-    ]
+    ],
+    "createdAt": "2024-02-20T16:45:00Z",
+    "modifiedAt": "2025-12-05T08:30:15Z",
+    "hotelType": "Lodge",
+    "cityId": 110,
+    "latitude": -24.0127,
+    "longitude": 31.5604
+  },
+  {
+    "id": 11,
+    "hotelName": "La Rambla Luxury",
+    "starRating": 5,
+    "availableRooms": 9,
+    "location": "Barcelona, Spain",
+    "description": "A sophisticated luxury hotel close to the city’s most vibrant streets and cultural landmarks.",
+    "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80",
+    "amenities": [
+      {
+        "id": 1,
+        "name": "Terrace Lounge",
+        "description": "Relaxing rooftop seating area."
+      },
+      {
+        "id": 2,
+        "name": "Breakfast Buffet",
+        "description": "Fresh daily breakfast selection."
+      },
+      {
+        "id": 3,
+        "name": "Airport Shuttle",
+        "description": "Convenient transportation service."
+      }
+    ],
+    "createdAt": "2023-10-18T09:55:30Z",
+    "modifiedAt": "2026-02-15T13:20:45Z",
+    "hotelType": "Hotel",
+    "cityId": 111,
+    "latitude": 41.3851,
+    "longitude": 2.1734
+  },
+  {
+    "id": 12,
+    "hotelName": "Marina Bay Elegance",
+    "starRating": 5,
+    "availableRooms": 14,
+    "location": "Singapore",
+    "description": "A refined urban escape offering modern luxury, waterfront views, and excellent service.",
+    "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
+    "amenities": [
+      {
+        "id": 1,
+        "name": "Infinity Pool",
+        "description": "Skyline pool with panoramic views."
+      },
+      {
+        "id": 2,
+        "name": "Business Center",
+        "description": "Work-friendly facilities for guests."
+      },
+      {
+        "id": 3,
+        "name": "Fitness Studio",
+        "description": "Modern gym with premium equipment."
+      }
+    ],
+    "createdAt": "2024-04-05T14:10:20Z",
+    "modifiedAt": "2026-03-02T10:05:55Z",
+    "hotelType": "Hotel",
+    "cityId": 112,
+    "latitude": 1.3521,
+    "longitude": 103.8198
+  },
+  {
+    "id": 13,
+    "hotelName": "Harbour View Retreat",
+    "starRating": 5,
+    "availableRooms": 11,
+    "location": "Sydney, Australia",
+    "description": "A luxury retreat with beautiful harbour scenery and spacious modern rooms.",
+    "imageUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
+    "amenities": [
+      {
+        "id": 1,
+        "name": "Harbour View Rooms",
+        "description": "Selected rooms overlook the water."
+      },
+      {
+        "id": 2,
+        "name": "Signature Restaurant",
+        "description": "Fine dining with local flavors."
+      },
+      {
+        "id": 3,
+        "name": "Spa & Wellness",
+        "description": "Relaxation and wellness facilities."
+      }
+    ],
+    "createdAt": "2023-12-01T11:25:40Z",
+    "modifiedAt": "2025-11-10T15:50:30Z",
+    "hotelType": "Hotel",
+    "cityId": 113,
+    "latitude": -33.8688,
+    "longitude": 151.2093
+  },
+  {
+    "id": 14,
+    "hotelName": "Chao Phraya Riverside",
+    "starRating": 5,
+    "availableRooms": 7,
+    "location": "Bangkok, Thailand",
+    "description": "A serene riverside resort blending comfort, elegance, and vibrant city access.",
+    "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
+    "amenities": [
+      {
+        "id": 1,
+        "name": "River Views",
+        "description": "Scenic waterfront rooms and dining."
+      },
+      {
+        "id": 2,
+        "name": "Boat Transfer",
+        "description": "Convenient river transport service."
+      },
+      {
+        "id": 3,
+        "name": "Traditional Spa",
+        "description": "Thai-inspired relaxation treatments."
+      }
+    ],
+    "createdAt": "2024-05-20T07:40:15Z",
+    "modifiedAt": "2026-01-25T12:35:00Z",
+    "hotelType": "Resort",
+    "cityId": 114,
+    "latitude": 13.7563,
+    "longitude": 100.5018
+  },
+  {
+    "id": 15,
+    "hotelName": "Victoria Harbour Luxe",
+    "starRating": 5,
+    "availableRooms": 13,
+    "location": "Hong Kong",
+    "description": "A high-end hotel overlooking the harbour with sleek design and premium hospitality.",
+    "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
+    "amenities": [
+      {
+        "id": 1,
+        "name": "Executive Lounge",
+        "description": "Private lounge for premium guests."
+      },
+      {
+        "id": 2,
+        "name": "Harbour Dining",
+        "description": "Dining spaces with stunning views."
+      },
+      {
+        "id": 3,
+        "name": "Luxury Transfers",
+        "description": "Private transfer arrangements available."
+      }
+    ],
+    "createdAt": "2023-06-30T16:15:10Z",
+    "modifiedAt": "2026-02-20T09:50:25Z",
+    "hotelType": "Hotel",
+    "cityId": 115,
+    "latitude": 22.3964,
+    "longitude": 114.1095
   }
 ]

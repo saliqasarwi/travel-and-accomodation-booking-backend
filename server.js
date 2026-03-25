@@ -104,25 +104,6 @@ app.get("/api/home/destinations/trending", (req, res) => {
   res.json(getJsonData("trending.json"));
 });
 
-app.get("/api/hotels", (req, res) => {
-  let hotels = getJsonData("hotels.json");
-
-  const { hotelName, city } = req.query;
-
-  if (hotelName) {
-    hotels = hotels.filter((h) =>
-      h.name?.toLowerCase().includes(hotelName.toLowerCase())
-    );
-  }
-
-  if (city) {
-    hotels = hotels.filter((h) =>
-      h.city?.toLowerCase().includes(city.toLowerCase())
-    );
-  }
-
-  res.json(hotels);
-});
 
 app.get("/api/hotels/:id/gallery", (req, res) => {
   res.json(getJsonData("gallery.json"));
@@ -149,9 +130,14 @@ app.get("/api/hotels/:id", (req, res) => {
 
 
 app.get("/api/hotels/:id/available-rooms", (req, res) => {
-  const hotelId=Number(req.params.id);
-  const rooms=getJsonData("rooms.json");
-  res.json(rooms.filter((r)=>Number(r.hotelId)===hotelId&&r.availability));
+  const hotelId = Number(req.params.id);
+  const rooms = getJsonData("availableRooms.json");
+
+  res.json(
+    rooms.filter(
+      (r) => Number(r.hotelId) === hotelId 
+    )
+  );
 });
 
 app.get("/api/hotels/:id/reviews", (req, res) => {
@@ -159,53 +145,84 @@ app.get("/api/hotels/:id/reviews", (req, res) => {
 });
 
 app.post("/api/bookings", (req, res) => {
-  const bookingId = Date.now();
+  const newBookingId = Date.now();
 
   const booking = {
-    bookingId,
-    confirmationNumber: `CNF-${bookingId}`,
+    bookingId: newBookingId,
+    confirmationNumber: `CNF-${newBookingId}`,
     bookingStatus: "Confirmed",
     createdAt: new Date().toISOString(),
     request: req.body,
   };
 
   const filePath = path.join(__dirname, "data", "bookings.json");
-  fs.writeFileSync(filePath, JSON.stringify(booking, null, 2), "utf8");
+
+  let bookings = [];
+  if (fs.existsSync(filePath)) {
+    const fileContent = fs.readFileSync(filePath, "utf8");
+    bookings = fileContent ? JSON.parse(fileContent) : [];
+    if (!Array.isArray(bookings)) bookings = [];
+  }
+
+  bookings.push(booking);
+
+  fs.writeFileSync(filePath, JSON.stringify(bookings, null, 2), "utf8");
 
   res.json({
-    bookingId,
+    bookingId: newBookingId,
     confirmationNumber: booking.confirmationNumber,
   });
 });
-
-
-
 app.get("/api/bookings/:id", (req, res) => {
-  const data = getJsonData("bookings.json");
+  const bookings = getJsonData("bookings.json");
   const id = Number(req.params.id);
 
-  if (!data || Number(data.bookingId) !== id) {
+  if (!Array.isArray(bookings)) {
     return res.status(404).json({ message: "Booking not found" });
   }
 
-  res.json(data);
+  const booking = bookings.find((b) => Number(b.bookingId) === id);
+
+  if (!booking) {
+    return res.status(404).json({ message: "Booking not found" });
+  }
+
+  res.json(booking);
 });
 
 app.get("/api/home/search", (req, res) => {
   console.log("SEARCH req.query =", req.query);
 
-  let { city, adults, children, numberOfRooms } = req.query; 
+  let { city, adults, children, numberOfRooms } = req.query;
 
-  // normalize
   city = typeof city === "string" ? city.trim() : city;
 
-  // IMPORTANT: if frontend accidentally sends "undefined" or "null" as strings
   if (city === "undefined" || city === "null" || city === "") {
     city = undefined;
   }
 
   const rooms = getJsonData("searchResults.json");
-  let filteredResults = rooms;
+  const amenities = getJsonData("amenities.json");
+
+  const amenityMap = new Map(
+    amenities.map((amenity) => [Number(amenity.id), amenity])
+  );
+
+  const hydratedRooms = rooms.map((room) => {
+    const amenityIds = Array.isArray(room.amenityIds)
+      ? room.amenityIds.map(Number).filter(Number.isFinite)
+      : [];
+
+    return {
+      ...room,
+      amenityIds,
+      amenities: amenityIds
+        .map((id) => amenityMap.get(id))
+        .filter(Boolean),
+    };
+  });
+
+  let filteredResults = hydratedRooms;
 
   if (city) {
     filteredResults = filteredResults.filter(
@@ -215,25 +232,31 @@ app.get("/api/home/search", (req, res) => {
     );
   }
 
-  // convert to numbers (because req.query values are strings)
   const adultsNum = adults != null ? Number(adults) : undefined;
   const childrenNum = children != null ? Number(children) : undefined;
   const roomsNum = numberOfRooms != null ? Number(numberOfRooms) : undefined;
 
   if (!Number.isNaN(adultsNum) && adultsNum !== undefined) {
-    filteredResults = filteredResults.filter((room) => room.numberOfAdults >= adultsNum);
+    filteredResults = filteredResults.filter(
+      (room) => room.numberOfAdults >= adultsNum
+    );
   }
+
   if (!Number.isNaN(childrenNum) && childrenNum !== undefined) {
-    filteredResults = filteredResults.filter((room) => room.numberOfChildren >= childrenNum);
+    filteredResults = filteredResults.filter(
+      (room) => room.numberOfChildren >= childrenNum
+    );
   }
+
   if (!Number.isNaN(roomsNum) && roomsNum !== undefined) {
-    filteredResults = filteredResults.filter((room) => room.numberOfRooms >= roomsNum);
+    filteredResults = filteredResults.filter(
+      (room) => room.numberOfRooms >= roomsNum
+    );
   }
 
   console.log("SEARCH results count =", filteredResults.length);
   res.json(filteredResults);
 });
-
 app.get("/api/search-results/amenities", (req, res) => {
   res.json(getJsonData("amenities.json"));
 });
@@ -247,11 +270,11 @@ app.get("/api/hotels/:id/rooms", (req, res) => {
 app.get("/api/cities", (req, res) => {
   let cities = getJsonData("cities.json");
 
-  const { cityName, country } = req.query;
+  const { name, country } = req.query;
 
-  if (cityName) {
+  if (name) {
     cities = cities.filter((c) =>
-      c.name?.toLowerCase().includes(cityName.toLowerCase())
+      c.name?.toLowerCase().includes(name.toLowerCase())
     );
   }
 
@@ -266,11 +289,15 @@ app.get("/api/cities", (req, res) => {
 
 
 app.put("/api/cities/:id", (req, res) => {
-  const newData = {
-    id: Number(req.params.id),
-    ...req.body,
-  };
-  writeJsonData("cities.json", newData);
+  const cities = getJsonData("cities.json");
+  const id = Number(req.params.id);
+  const existing = cities.find((c) => Number(c.id) === id);
+  const now=new Date().toISOString();
+  const newData = { ...existing,
+     ...req.body,
+     createdAt: existing?.createdAt ?? now,
+     modifiedAt: now };
+  writeJsonData("cities.json", newData, "id");
   res.json(getJsonData("cities.json"));
 });
 app.delete("/api/cities/:id", (req, res) => {
@@ -278,80 +305,135 @@ app.delete("/api/cities/:id", (req, res) => {
   res.json(getJsonData("cities.json"));
 });
 app.post("/api/cities", (req, res) => {
-  const data = getJsonData("cities.json");
-  writeJsonData("cities.json", {
-    id: data[data.length - 1].id + 1,
+  const cities = getJsonData("cities.json");
+  const maxId = cities.length ? Math.max(...cities.map((c) => Number(c.id))) : 0;
+  const now=new Date().toISOString();
+  const newCity = {
+    id: maxId + 1,
+    createdAt: now,
+    modifiedAt: now,
     ...req.body,
-  });
+  };
+  writeJsonData("cities.json", newCity, "id");
   res.json(getJsonData("cities.json"));
+});
+app.get("/api/hotels", (req, res) => {
+  let hotels = getJsonData("hotels.json");
+
+  const { hotelName} = req.query;
+
+  // filter by hotelName using hotel.hotelName
+  if (hotelName) {
+    const q = String(hotelName).toLowerCase();
+    hotels = hotels.filter((h) =>
+      String(h.hotelName ?? "").toLowerCase().includes(q)
+    );
+  }
+
+
+
+  // Map to Admin grid fields (WITHOUT changing hotels.json)
+  const mapped = hotels.map((h) => {
+    return {
+      ...h,
+      // Admin grid expects "name"
+      hotelName: h.hotelName,
+
+      // Admin grid expects "starRate"
+      starRating: h.starRating,
+          
+      // dates not in JSON -> return empty for now
+      createdAt: h.createdAt ?? "",
+      modifiedAt: h.modifiedAt ?? "",
+    };
+  });
+
+  res.json(mapped);
 });
 
 app.put("/api/hotels/:id", (req, res) => {
-  const newData = {
-    id: Number(req.params.id),
-    ...req.body,
-  };
-  writeJsonData("hotels.json", newData);
-
-  res.json(getJsonData("hotels.json"));
+  const hotels = getJsonData("hotels.json");
+  const id = Number(req.params.id);
+  const existing = hotels.find((h) => Number(h.id) === id);
+  const now=new Date().toISOString();
+  const newData = { ...existing, ...req.body, modifiedAt: now };
+  writeJsonData("hotels.json", newData, "id");
+  res.json(getJsonData("hotels.json"));   // or just res.json(hotels[index])
 });
 app.delete("/api/hotels/:id", (req, res) => {
   deleteJsonData("hotels.json", "id", req.params.id);
   res.json(getJsonData("hotels.json"));
 });
 app.post("/api/hotels", (req, res) => {
-  const data = getJsonData("hotels.json");
-  writeJsonData("hotels.json", {
-    id: data[data.length - 1].id + 1,
+  const hotels = getJsonData("hotels.json");
+  const maxId = hotels.length ? Math.max(...hotels.map((h) => Number(h.id))) : 0;
+  const now=new Date().toISOString();
+  const newHotel = {
+    id: maxId + 1,
+    createdAt: now,
+    modifiedAt: now,
     ...req.body,
-  });
+  };
+  writeJsonData("hotels.json", newHotel, "id");
 
   res.json(getJsonData("hotels.json"));
 });
 app.get("/api/rooms", (req, res) => {
   let rooms = getJsonData("rooms.json");
-
-  const { roomNumber, hotel, city } = req.query;
+  const { roomNumber } = req.query;
+  let mapped = rooms.map((r) => ({
+    roomId: r.roomId,
+    roomNumber: r.roomNumber,
+    availability: r.availability,
+    adultCapacity: r.adultCapacity,
+    childrenCapacity: r.childrenCapacity,
+    createdAt: r.createdAt ?? "",
+    modifiedAt: r.modifiedAt ?? "",
+  }));
 
   if (roomNumber) {
-    rooms = rooms.filter((r) =>
-      String(r.roomNumber).includes(roomNumber)
-    );
+    mapped = mapped.filter((r) => String(r.roomNumber ?? "").includes(String(roomNumber)));
   }
 
-  if (hotel) {
-    rooms = rooms.filter((r) =>
-      r.hotelName?.toLowerCase().includes(hotel.toLowerCase())
-    );
-  }
-
-  if (city) {
-    rooms = rooms.filter((r) =>
-      r.city?.toLowerCase().includes(city.toLowerCase())
-    );
-  }
-
-  res.json(rooms);
+  res.json(mapped);
 });
-app.put("/api/rooms/:id", (req, res) => {
+app.put("/api/rooms/:roomId", (req, res) => {
+  const roomId = Number(req.params.id);
+  const rooms = getJsonData("rooms.json");
+  const existing = rooms.find((r) => Number(r.roomId) === roomId);
+
+  const now = new Date().toISOString();
+
   const newData = {
-    id: Number(req.params.id),
+    ...existing,
+    ...req.body,
+    roomId,
+    createdAt: existing?.createdAt ?? now,
+    modifiedAt: now,
+  };
+  writeJsonData("rooms.json", newData, "roomId");
+  res.json(getJsonData("rooms.json"));
+});
+
+app.delete("/api/rooms/:roomId", (req, res) => {
+  deleteJsonData("rooms.json", "roomId", req.params.roomId);
+  res.json(getJsonData("rooms.json"));
+});
+
+app.post("/api/rooms", (req, res) => {
+  const rooms = getJsonData("rooms.json");
+  const maxId = rooms.length ? Math.max(...rooms.map((r) => Number(r.roomId))) : 0;
+
+  const now = new Date().toISOString();
+
+  const newRoom = {
+    roomId: maxId + 1,
+    createdAt: now,
+    modifiedAt: now,
     ...req.body,
   };
 
-  writeJsonData("rooms.json", newData);
-  res.json(getJsonData("rooms.json"));
-});
-app.delete("/api/rooms/:id", (req, res) => {
-  deleteJsonData("rooms.json", "id", req.params.id);
-  res.json(getJsonData("rooms.json"));
-});
-app.post("/api/rooms", (req, res) => {
-  const data = getJsonData("rooms.json");
-  writeJsonData("rooms.json", {
-    id: data[data.length - 1].id + 1,
-    ...req.body,
-  });
+  writeJsonData("rooms.json", newRoom, "roomId");
   res.json(getJsonData("rooms.json"));
 });
 app.get("/api/admin/navigation", (req, res) => {

@@ -1,63 +1,449 @@
 [
   {
+    "hotelId": 1,
     "roomId": 101,
     "roomNumber": 1,
-    "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/179049179.jpg?k=154aef35279ec3534f3b44d33f63cde88f9e7469a7c2154e97d4158a18e628ac&o=&hp=1",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop",
     "roomType": "Ocean View Suite",
     "capacityOfAdults": 2,
     "capacityOfChildren": 2,
-    "roomAmenities": [
-      {
-        "id": 1,
-        "name": "Free Wi-Fi",
-        "description": "High-speed internet access"
-      },
-      {
-        "id": 2,
-        "name": "Air Conditioning",
-        "description": "Cool and comfortable air conditioning"
-      }
+    "amenities": [
+      { "id": 1, "name": "Free Wi-Fi", "description": "Stay connected with high-speed internet throughout the resort." },
+      { "id": 2, "name": "Swimming Pool", "description": "An infinity pool with stunning ocean views." }
     ],
-    "price": 500.0,
-    "availability": true
+    "price": 500,
+    "availability": false
   },
   {
+    "hotelId": 1,
     "roomId": 102,
     "roomNumber": 2,
-    "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524211.jpg?k=28e15c26dd1f11266d9bd21757d79b706b5a775c3258ab4a4c608fe3eb642aba&o=&hp=1",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
     "roomType": "Garden View Room",
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
-    "roomAmenities": [
-      {
-        "id": 3,
-        "name": "TV",
-        "description": "Flat-screen TV with cable channels"
-      },
-      {
-        "id": 4,
-        "name": "Mini Fridge",
-        "description": "Fully stocked mini-fridge"
-      }
+    "amenities": [
+      { "id": 3, "name": "Balcony", "description": "Private balcony with tropical garden view." },
+      { "id": 4, "name": "Mini Bar", "description": "In-room mini bar with refreshments." }
     ],
-    "price": 200.0,
+    "price": 380,
     "availability": true
   },
   {
+    "hotelId": 1,
     "roomId": 103,
     "roomNumber": 3,
-    "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/486145081.jpg?k=e8c95b71501aaaae48bbcebb7ac8ae37c892873a4be235240cc12c31168425c3&o=&hp=1",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
     "roomType": "Standard Room",
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "roomAmenities": [
-      {
-        "id": 5,
-        "name": "Heating",
-        "description": "Adjustable heating system"
-      }
+    "amenities": [
+      { "id": 5, "name": "Air Conditioning", "description": "Cool and comfortable air conditioning." }
     ],
-    "price": 150.0,
+    "price": 280,
+    "availability": true
+  },
+
+  {
+    "hotelId": 2,
+    "roomId": 201,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611971263023-105938ce12ed?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Deluxe Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenities": [
+      { "id": 6, "name": "Gym", "description": "Fully equipped gym with modern fitness equipment." },
+      { "id": 7, "name": "Spa", "description": "Relax and rejuvenate with spa treatments." }
+    ],
+    "price": 250,
+    "availability": true
+  },
+  {
+    "hotelId": 2,
+    "roomId": 202,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Alpine View Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 8, "name": "Mountain View", "description": "Panoramic view of the Alps." },
+      { "id": 9, "name": "Fireplace", "description": "Warm fireplace for cozy evenings." }
+    ],
+    "price": 320,
     "availability": false
+  },
+  {
+    "hotelId": 2,
+    "roomId": 203,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Family Chalet Room",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 10, "name": "Heating", "description": "Adjustable heating system." }
+    ],
+    "price": 410,
+    "availability": true
+  },
+
+  {
+    "hotelId": 3,
+    "roomId": 301,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop",
+    "roomType": "Standard Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 11, "name": "24/7 Reception", "description": "Always available to assist you." }
+    ],
+    "price": 180,
+    "availability": true
+  },
+  {
+    "hotelId": 3,
+    "roomId": 302,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "City View Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenities": [
+      { "id": 12, "name": "City View", "description": "Overlooks the city skyline." },
+      { "id": 13, "name": "Desk", "description": "Comfortable work desk." }
+    ],
+    "price": 210,
+    "availability": true
+  },
+  {
+    "hotelId": 3,
+    "roomId": 303,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Family Room",
+    "capacityOfAdults": 3,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 14, "name": "Extra Bed", "description": "Additional bed for family stays." }
+    ],
+    "price": 260,
+    "availability": true
+  },
+
+  {
+    "hotelId": 4,
+    "roomId": 401,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611971262702-ed56db509bd9?q=80&w=1964&auto=format&fit=crop",
+    "roomType": "Beachfront Villa",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 15, "name": "Private Pool", "description": "Enjoy a private pool with a stunning view." },
+      { "id": 16, "name": "Personal Butler", "description": "A dedicated butler for all your needs." }
+    ],
+    "price": 600,
+    "availability": true
+  },
+  {
+    "hotelId": 4,
+    "roomId": 402,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Lagoon Suite",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 17, "name": "Sea View", "description": "Direct view of the lagoon." },
+      { "id": 18, "name": "Jacuzzi", "description": "Private in-room jacuzzi." }
+    ],
+    "price": 520,
+    "availability": false
+  },
+  {
+    "hotelId": 4,
+    "roomId": 403,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Garden Bungalow",
+    "capacityOfAdults": 3,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 19, "name": "Outdoor Seating", "description": "Private terrace seating area." }
+    ],
+    "price": 430,
+    "availability": false
+  },
+
+  {
+    "hotelId": 5,
+    "roomId": 501,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611440691786-2d3b765a60e3?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Skyline Suite",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 20, "name": "Rooftop Bar", "description": "Enjoy cocktails with an amazing city view." },
+      { "id": 21, "name": "Smart Home", "description": "Rooms equipped with smart home technology." }
+    ],
+    "price": 350,
+    "availability": true
+  },
+  {
+    "hotelId": 5,
+    "roomId": 502,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Executive Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenities": [
+      { "id": 22, "name": "Work Desk", "description": "Dedicated work-friendly desk." },
+      { "id": 23, "name": "Coffee Machine", "description": "Premium in-room coffee." }
+    ],
+    "price": 310,
+    "availability": true
+  },
+  {
+    "hotelId": 5,
+    "roomId": 503,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Family Suite",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 24, "name": "Living Area", "description": "Separate living area for families." }
+    ],
+    "price": 420,
+    "availability": true
+  },
+
+  {
+    "hotelId": 6,
+    "roomId": 601,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1612231393559-9414dc467ef7?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Desert Suite",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 25, "name": "Heated Pool", "description": "A luxurious heated pool for year-round relaxation." },
+      { "id": 26, "name": "Fire Pit", "description": "Gather around the fire pit for a cozy evening." }
+    ],
+    "price": 220,
+    "availability": false
+  },
+  {
+    "hotelId": 6,
+    "roomId": 602,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Oasis Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 27, "name": "Patio", "description": "Private outdoor sitting area." },
+      { "id": 28, "name": "Mini Bar", "description": "In-room refreshments." }
+    ],
+    "price": 200,
+    "availability": true
+  },
+  {
+    "hotelId": 6,
+    "roomId": 603,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Family Desert Room",
+    "capacityOfAdults": 5,
+    "capacityOfChildren": 3,
+    "amenities": [
+      { "id": 29, "name": "Large Lounge", "description": "Extra space for family comfort." }
+    ],
+    "price": 320,
+    "availability": false
+  },
+
+  {
+    "hotelId": 7,
+    "roomId": 701,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611095459865-47682ae3c41c?q=80&w=2070&auto=format&fit=crop",
+    "roomType": "Oceanfront Room",
+    "capacityOfAdults": 3,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 30, "name": "Beach Access", "description": "Direct access to the beach from your room." }
+    ],
+    "price": 180,
+    "availability": true
+  },
+  {
+    "hotelId": 7,
+    "roomId": 702,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Seaside Balcony Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 31, "name": "Balcony", "description": "Balcony with sea breeze." },
+      { "id": 32, "name": "TV", "description": "Flat-screen television." }
+    ],
+    "price": 210,
+    "availability": true
+  },
+  {
+    "hotelId": 7,
+    "roomId": 703,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Family Beach Room",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 33, "name": "Extra Space", "description": "More room for family stays." }
+    ],
+    "price": 260,
+    "availability": true
+  },
+
+  {
+    "hotelId": 8,
+    "roomId": 801,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1573254485283-cde42629b8c5?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Royal Suite",
+    "capacityOfAdults": 3,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 34, "name": "Chandelier", "description": "Luxurious crystal chandelier in every room." },
+      { "id": 35, "name": "Jacuzzi", "description": "Relax in a private jacuzzi." }
+    ],
+    "price": 700,
+    "availability": false
+  },
+  {
+    "hotelId": 8,
+    "roomId": 802,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Classic Palace Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 36, "name": "Luxury Bedding", "description": "Premium king-size bedding." },
+      { "id": 37, "name": "Marble Bathroom", "description": "Elegant marble bathroom." }
+    ],
+    "price": 520,
+    "availability": true
+  },
+  {
+    "hotelId": 8,
+    "roomId": 803,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Family Heritage Suite",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 38, "name": "Large Sitting Area", "description": "Spacious seating for family stays." }
+    ],
+    "price": 610,
+    "availability": true
+  },
+
+  {
+    "hotelId": 9,
+    "roomId": 901,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1642455721185-ddb96935b001?q=80&w=1935&auto=format&fit=crop",
+    "roomType": "Lakeview Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 39, "name": "Fishing", "description": "Enjoy fishing on the lake." },
+      { "id": 40, "name": "Boating", "description": "Rent a boat and enjoy the peaceful waters." }
+    ],
+    "price": 300,
+    "availability": false
+  },
+  {
+    "hotelId": 9,
+    "roomId": 902,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Premium Lake Suite",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 41, "name": "Balcony", "description": "Private balcony overlooking the lake." },
+      { "id": 42, "name": "Coffee Corner", "description": "In-room tea and coffee setup." }
+    ],
+    "price": 340,
+    "availability": true
+  },
+  {
+    "hotelId": 9,
+    "roomId": 903,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Family Lake Room",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 43, "name": "Dining Nook", "description": "Small in-room dining area." }
+    ],
+    "price": 390,
+    "availability": true
+  },
+
+  {
+    "hotelId": 10,
+    "roomId": 1001,
+    "roomNumber": 1,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1654347880369-94921d520075?q=80&w=1935&auto=format&fit=crop",
+    "roomType": "Garden Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 44, "name": "Garden Views", "description": "Enjoy beautiful views of the lush garden." },
+      { "id": 45, "name": "Afternoon Tea", "description": "Relax with an afternoon tea in the garden." }
+    ],
+    "price": 280,
+    "availability": true
+  },
+  {
+    "hotelId": 10,
+    "roomId": 1002,
+    "roomNumber": 2,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Veranda Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenities": [
+      { "id": 46, "name": "Private Veranda", "description": "Quiet veranda with seating." },
+      { "id": 47, "name": "Mini Fridge", "description": "Convenient in-room mini fridge." }
+    ],
+    "price": 260,
+    "availability": false
+  },
+  {
+    "hotelId": 10,
+    "roomId": 1003,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+    "roomType": "Family Manor Suite",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 2,
+    "amenities": [
+      { "id": 48, "name": "Large Wardrobe", "description": "Spacious storage for longer stays." }
+    ],
+    "price": 360,
+    "availability": true
   }
 ]

@@ -1,11 +1,60 @@
-{
-  "customerName": "Alice Green",
-  "hotelName": "Sunset Resort",
-  "roomNumber": "102",
-  "roomType": "Ocean View Suite",
-  "bookingDateTime": "2025-02-10T14:30:00Z",
-  "totalCost": 1200.0,
-  "paymentMethod": "Credit Card",
-  "bookingStatus": "Confirmed",
-  "confirmationNumber": "ABC123XYZ"
-}
+[
+  {
+    "bookingId": 1774475933979,
+    "confirmationNumber": "CNF-1774475933979",
+    "bookingStatus": "Confirmed",
+    "createdAt": "2026-03-25T21:58:53.979Z",
+    "request": {
+      "guestInfo": {
+        "firstName": "Sali",
+        "lastName": "Qasarwi",
+        "email": "sali.qasarwi@gmail.com",
+        "phone": "0592440108"
+      },
+      "paymentInfo": {
+        "method": "pay_at_hotel",
+        "cardNumber": "",
+        "expiry": "",
+        "cvv": "",
+        "cardholderName": ""
+      },
+      "specialRequests": {
+        "notes": ""
+      },
+      "items": [
+        {
+          "hotelId": 1,
+          "hotelName": "Sunset Resort",
+          "cityName": "Bali, Indonesia",
+          "starRating": 5,
+          "roomType": "Garden View Room",
+          "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+          "checkInDate": "",
+          "checkOutDate": "",
+          "adults": 2,
+          "children": 0,
+          "numberOfRooms": 1,
+          "pricePerNight": 380,
+          "discount": 0,
+          "id": "1|Garden View Room|||2|0|1"
+        },
+        {
+          "hotelId": 1,
+          "hotelName": "Sunset Resort",
+          "cityName": "Bali, Indonesia",
+          "starRating": 5,
+          "roomType": "Standard Room",
+          "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+          "checkInDate": "",
+          "checkOutDate": "",
+          "adults": 2,
+          "children": 0,
+          "numberOfRooms": 1,
+          "pricePerNight": 280,
+          "discount": 0,
+          "id": "1|Standard Room|||2|0|1"
+        }
+      ]
+    }
+  }
+]

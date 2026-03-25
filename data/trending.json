@@ -20,4 +20,12 @@
     "description": "The city that never sleeps, home to Times Square and Central Park.",
     "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg/1280px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg"
   }
-]
+  
+,    {
+      "cityId": 4,
+      "cityName": "London",
+      "countryName": "United Kingdom",
+      "description": "A historic capital famous for landmarks like Big Ben, the Tower of London, and Buckingham Palace.",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/London_Montage_L.jpg"
+    }
+  ]

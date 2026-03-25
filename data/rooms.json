@@ -1,197 +1,236 @@
 [
   {
     "roomId": 201,
-    "hotelId": 2,
-    "roomNumber": "101",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1576354302919-96748cb8299e?auto=format&fit=crop&q=80",
-    "roomType": "Deluxe Suite",
-    "capacityOfAdults": 2,
-    "capacityOfChildren": 2,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Free Wi-Fi",
-        "description": "High-speed internet access"
-      },
-      {
-        "id": 2,
-        "name": "Air Conditioning",
-        "description": "Individually controlled"
-      }
-    ],
-    "price": 250.0,
-    "availability": true
+    "roomNumber": 101,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 2,
+    "createdAt": "2023-03-15T10:20:00Z",
+    "modifiedAt": "2026-01-10T14:35:22Z"
   },
   {
     "roomId": 202,
-    "hotelId": 2,
-    "roomNumber": "102",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80",
-    "roomType": "Standard Room",
-    "capacityOfAdults": 2,
-    "capacityOfChildren": 1,
-    "amenities": [
-      {
-        "id": 3,
-        "name": "Flat-screen TV",
-        "description": "International channels"
-      }
-    ],
-    "price": 150.0,
-    "availability": true
+    "roomNumber": 102,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 1,
+    "createdAt": "2023-05-22T09:45:30Z",
+    "modifiedAt": "2025-12-05T11:15:40Z"
   },
   {
     "roomId": 203,
-    "hotelId": 2,
-    "roomNumber": "103",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80",
-    "roomType": "Executive Suite",
-    "capacityOfAdults": 3,
-    "capacityOfChildren": 2,
-    "amenities": [
-      {
-        "id": 4,
-        "name": "Mini Bar",
-        "description": "Stocked beverages/snacks"
-      },
-      {
-        "id": 5,
-        "name": "Balcony",
-        "description": "Private with view"
-      }
-    ],
-    "price": 350.0,
-    "availability": false
+    "roomNumber": 103,
+    "availability": false,
+    "adultCapacity": 3,
+    "childrenCapacity": 2,
+    "createdAt": "2023-08-10T13:30:15Z",
+    "modifiedAt": "2026-02-28T16:50:00Z"
   },
   {
     "roomId": 204,
-    "hotelId": 1,
-    "roomNumber": "104",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792a0327d?auto=format&fit=crop&q=80",
-    "roomType": "Family Room",
-    "capacityOfAdults": 4,
-    "capacityOfChildren": 3,
-    "amenities": [
-      {
-        "id": 6,
-        "name": "Kitchenette",
-        "description": "Microwave and fridge"
-      }
-    ],
-    "price": 400.0,
-    "availability": true
+    "roomNumber": 104,
+    "availability": true,
+    "adultCapacity": 4,
+    "childrenCapacity": 3,
+    "createdAt": "2024-01-05T08:10:45Z",
+    "modifiedAt": "2026-03-01T09:20:10Z"
   },
   {
     "roomId": 205,
-    "hotelId": 4,
-    "roomNumber": "105",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80",
-    "roomType": "Luxury Suite",
-    "capacityOfAdults": 2,
-    "capacityOfChildren": 1,
-    "amenities": [
-      {
-        "id": 7,
-        "name": "Jacuzzi",
-        "description": "Private in-room"
-      },
-      {
-        "id": 8,
-        "name": "Smart TV",
-        "description": "Streaming services"
-      }
-    ],
-    "price": 500.0,
-    "availability": true
+    "roomNumber": 105,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 1,
+    "createdAt": "2023-11-18T12:55:00Z",
+    "modifiedAt": "2025-10-20T15:40:30Z"
   },
   {
     "roomId": 206,
-    "hotelId": 4,
-    "roomNumber": "106",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
-    "roomType": "Presidential Suite",
-    "capacityOfAdults": 5,
-    "capacityOfChildren": 3,
-    "amenities": [
-      {
-        "id": 9,
-        "name": "Private Pool",
-        "description": "Infinity with view"
-      }
-    ],
-    "price": 1000.0,
-    "availability": false
+    "roomNumber": 106,
+    "availability": false,
+    "adultCapacity": 5,
+    "childrenCapacity": 3,
+    "createdAt": "2024-04-12T16:25:20Z",
+    "modifiedAt": "2026-02-15T10:05:55Z"
   },
   {
     "roomId": 207,
-    "hotelId": 3,
-    "roomNumber": "107",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80",
-    "roomType": "Standard Room",
-    "capacityOfAdults": 2,
-    "capacityOfChildren": 0,
-    "amenities": [
-      {
-        "id": 10,
-        "name": "Coffee Maker",
-        "description": "Complimentary coffee/tea"
-      }
-    ],
-    "price": 120.0,
-    "availability": true
+    "roomNumber": 107,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 0,
+    "createdAt": "2023-09-30T07:40:00Z",
+    "modifiedAt": "2026-01-25T13:30:45Z"
   },
   {
     "roomId": 208,
-    "hotelId": 5,
-    "roomNumber": "108",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80",
-    "roomType": "Deluxe Room",
-    "capacityOfAdults": 3,
-    "capacityOfChildren": 1,
-    "amenities": [
-      {
-        "id": 11,
-        "name": "24/7 Room Service",
-        "description": "Round-the-clock dining"
-      }
-    ],
-    "price": 220.0,
-    "availability": false
+    "roomNumber": 108,
+    "availability": false,
+    "adultCapacity": 3,
+    "childrenCapacity": 1,
+    "createdAt": "2024-02-08T11:15:10Z",
+    "modifiedAt": "2025-11-12T17:20:00Z"
   },
   {
     "roomId": 209,
-    "hotelId": 7,
-    "roomNumber": "109",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792a0327d?auto=format&fit=crop&q=80",
-    "roomType": "Twin Room",
-    "capacityOfAdults": 2,
-    "capacityOfChildren": 1,
-    "amenities": [
-      {
-        "id": 12,
-        "name": "Laundry Service",
-        "description": "Same-day service"
-      }
-    ],
-    "price": 180.0,
-    "availability": true
+    "roomNumber": 109,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 1,
+    "createdAt": "2023-12-20T14:50:55Z",
+    "modifiedAt": "2026-02-10T08:45:15Z"
   },
   {
     "roomId": 210,
-    "hotelId": 9,
-    "roomNumber": "110",
-    "roomPhotoUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80",
-    "roomType": "Penthouse Suite",
-    "capacityOfAdults": 6,
-    "capacityOfChildren": 4,
-    "amenities": [
-      {
-        "id": 13,
-        "name": "Private Chef",
-        "description": "Exclusive dining"
-      }
-    ],
-    "price": 2000.0,
-    "availability": true
+    "roomNumber": 110,
+    "availability": true,
+    "adultCapacity": 6,
+    "childrenCapacity": 4,
+    "createdAt": "2024-06-01T10:05:30Z",
+    "modifiedAt": "2026-03-02T12:15:40Z"
+  },
+  {
+    "roomId": 211,
+    "roomNumber": 201,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 1,
+    "createdAt": "2024-03-10T09:30:00Z",
+    "modifiedAt": "2026-02-20T14:10:25Z"
+  },
+  {
+    "roomId": 212,
+    "roomNumber": 301,
+    "availability": true,
+    "adultCapacity": 3,
+    "childrenCapacity": 2,
+    "createdAt": "2023-07-25T11:45:15Z",
+    "modifiedAt": "2026-01-15T16:55:00Z"
+  },
+  {
+    "roomId": 213,
+    "roomNumber": 401,
+    "availability": false,
+    "adultCapacity": 2,
+    "childrenCapacity": 2,
+    "createdAt": "2024-05-18T08:20:40Z",
+    "modifiedAt": "2025-12-22T13:40:10Z"
+  },
+  {
+    "roomId": 214,
+    "roomNumber": 202,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 1,
+    "createdAt": "2023-10-05T15:10:00Z",
+    "modifiedAt": "2026-03-03T10:25:30Z"
+  },
+  {
+    "roomId": 215,
+    "roomNumber": 501,
+    "availability": true,
+    "adultCapacity": 4,
+    "childrenCapacity": 2,
+    "createdAt": "2024-07-14T12:35:55Z",
+    "modifiedAt": "2026-02-05T09:50:45Z"
+  },
+  {
+    "roomId": 216,
+    "roomNumber": 110,
+    "availability": false,
+    "adultCapacity": 2,
+    "childrenCapacity": 0,
+    "createdAt": "2023-04-30T14:00:20Z",
+    "modifiedAt": "2025-09-18T11:30:00Z"
+  },
+  {
+    "roomId": 217,
+    "roomNumber": 601,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 1,
+    "createdAt": "2024-09-02T10:55:10Z",
+    "modifiedAt": "2026-02-25T17:15:20Z"
+  },
+  {
+    "roomId": 218,
+    "roomNumber": 702,
+    "availability": true,
+    "adultCapacity": 3,
+    "childrenCapacity": 2,
+    "createdAt": "2023-06-12T16:40:00Z",
+    "modifiedAt": "2026-01-30T08:35:55Z"
+  },
+  {
+    "roomId": 219,
+    "roomNumber": 803,
+    "availability": false,
+    "adultCapacity": 2,
+    "childrenCapacity": 2,
+    "createdAt": "2024-11-20T13:25:45Z",
+    "modifiedAt": "2025-10-10T12:05:30Z"
+  },
+  {
+    "roomId": 220,
+    "roomNumber": 204,
+    "availability": true,
+    "adultCapacity": 4,
+    "childrenCapacity": 2,
+    "createdAt": "2023-02-28T09:15:00Z",
+    "modifiedAt": "2026-03-01T11:40:15Z"
+  },
+  {
+    "roomId": 221,
+    "roomNumber": 305,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 1,
+    "createdAt": "2024-08-15T14:50:30Z",
+    "modifiedAt": "2026-02-18T15:20:00Z"
+  },
+  {
+    "roomId": 222,
+    "roomNumber": 406,
+    "availability": true,
+    "adultCapacity": 4,
+    "childrenCapacity": 3,
+    "createdAt": "2023-12-05T10:30:45Z",
+    "modifiedAt": "2025-11-28T09:55:10Z"
+  },
+  {
+    "roomId": 223,
+    "roomNumber": 507,
+    "availability": false,
+    "adultCapacity": 3,
+    "childrenCapacity": 2,
+    "createdAt": "2024-10-22T11:05:20Z",
+    "modifiedAt": "2026-02-12T16:45:00Z"
+  },
+  {
+    "roomId": 224,
+    "roomNumber": 608,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 1,
+    "createdAt": "2023-08-08T15:40:00Z",
+    "modifiedAt": "2026-01-05T13:10:35Z"
+  },
+  {
+    "roomId": 225,
+    "roomNumber": 709,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 0,
+    "createdAt": "2024-12-01T08:55:55Z",
+    "modifiedAt": "2026-03-03T10:30:20Z"
+  },
+  {
+    "roomId": 226,
+    "roomNumber": 56,
+    "availability": true,
+    "adultCapacity": 2,
+    "childrenCapacity": 2,
+    "createdAt": "2026-03-05T02:05:33.956Z",
+    "modifiedAt": "2026-03-05T02:05:33.956Z"
   }
 ]
