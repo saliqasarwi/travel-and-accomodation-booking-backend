@@ -189,7 +189,15 @@ app.get("/api/bookings/:id", (req, res) => {
 
   res.json(booking);
 });
+app.get("/api/bookings", (req, res) => {
+  const bookings = getJsonData("bookings.json");
 
+  if (!Array.isArray(bookings)) {
+    return res.json([]);
+  }
+
+  res.json(bookings);
+});
 app.get("/api/home/search", (req, res) => {
   console.log("SEARCH req.query =", req.query);
 
