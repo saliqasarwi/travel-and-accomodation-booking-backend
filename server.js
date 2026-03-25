@@ -454,6 +454,24 @@ app.get("/api/admin/navigation", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+app.get("/api/profile", (req, res) => {
+  const profile = getJsonData("profile.json");
+  res.json(profile);
+});
+
+app.put("/api/profile", (req, res) => {
+  const existing = getJsonData("profile.json");
+  const updated = {
+    ...existing,
+    ...req.body,
+    modifiedAt: new Date().toISOString(),
+  };
+
+  const filePath = path.join(__dirname, "data", "profile.json");
+  fs.writeFileSync(filePath, JSON.stringify(updated, null, 2), "utf8");
+
+  res.json(updated);
+});
 
 /**
  * @swagger
