@@ -150,7 +150,7 @@ app.post("/api/bookings", (req, res) => {
   const booking = {
     bookingId: newBookingId,
     confirmationNumber: `CNF-${newBookingId}`,
-    bookingStatus: "Confirmed",
+    bookingStatus: { "en": "Confirmed", "ar": "مؤكد" },
     createdAt: new Date().toISOString(),
     request: req.body,
   };
@@ -233,11 +233,16 @@ app.get("/api/home/search", (req, res) => {
   let filteredResults = hydratedRooms;
 
   if (city) {
-    filteredResults = filteredResults.filter(
-      (room) =>
-        typeof room.cityName === "string" &&
-        room.cityName.toLowerCase().includes(city.toLowerCase())
-    );
+    const cityLower = city.toLowerCase();
+    filteredResults = filteredResults.filter((room) => {
+      const cn = room.cityName;
+      if (typeof cn === "string") return cn.toLowerCase().includes(cityLower);
+      if (cn && typeof cn === "object") {
+        return (cn.en || "").toLowerCase().includes(cityLower) ||
+               (cn.ar || "").toLowerCase().includes(cityLower);
+      }
+      return false;
+    });
   }
 
   const adultsNum = adults != null ? Number(adults) : undefined;
@@ -281,15 +286,29 @@ app.get("/api/cities", (req, res) => {
   const { name, country } = req.query;
 
   if (name) {
-    cities = cities.filter((c) =>
-      c.name?.toLowerCase().includes(name.toLowerCase())
-    );
+    const nameLower = name.toLowerCase();
+    cities = cities.filter((c) => {
+      const n = c.name;
+      if (typeof n === "string") return n.toLowerCase().includes(nameLower);
+      if (n && typeof n === "object") {
+        return (n.en || "").toLowerCase().includes(nameLower) ||
+               (n.ar || "").toLowerCase().includes(nameLower);
+      }
+      return false;
+    });
   }
 
   if (country) {
-    cities = cities.filter((c) =>
-      c.country?.toLowerCase().includes(country.toLowerCase())
-    );
+    const countryLower = country.toLowerCase();
+    cities = cities.filter((c) => {
+      const ct = c.country;
+      if (typeof ct === "string") return ct.toLowerCase().includes(countryLower);
+      if (ct && typeof ct === "object") {
+        return (ct.en || "").toLowerCase().includes(countryLower) ||
+               (ct.ar || "").toLowerCase().includes(countryLower);
+      }
+      return false;
+    });
   }
 
   res.json(cities);
@@ -333,9 +352,15 @@ app.get("/api/hotels", (req, res) => {
   // filter by hotelName using hotel.hotelName
   if (hotelName) {
     const q = String(hotelName).toLowerCase();
-    hotels = hotels.filter((h) =>
-      String(h.hotelName ?? "").toLowerCase().includes(q)
-    );
+    hotels = hotels.filter((h) => {
+      const hn = h.hotelName;
+      if (typeof hn === "string") return hn.toLowerCase().includes(q);
+      if (hn && typeof hn === "object") {
+        return (hn.en || "").toLowerCase().includes(q) ||
+               (hn.ar || "").toLowerCase().includes(q);
+      }
+      return false;
+    });
   }
 
 
