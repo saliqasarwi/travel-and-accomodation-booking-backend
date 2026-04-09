@@ -1,32 +1,47 @@
 [
   {
     "reviewId": 1,
-    "customerName": "John Doe",
+    "customerName": { "en": "John Doe", "ar": "جون دو" },
     "rating": 4.5,
-    "description": "Great experience! The staff were friendly and the room was clean and comfortable. Will definitely return."
+    "description": {
+      "en": "Great experience! The staff were friendly and the room was clean and comfortable. Will definitely return.",
+      "ar": "تجربة رائعة! كان الموظفون ودودين والغرفة نظيفة ومريحة. سأعود بالتأكيد."
+    }
   },
   {
     "reviewId": 2,
-    "customerName": "Jane Smith",
+    "customerName": { "en": "Jane Smith", "ar": "جين سميث" },
     "rating": 5.0,
-    "description": "An amazing stay! The view from the suite was breathtaking and the amenities were top-notch."
+    "description": {
+      "en": "An amazing stay! The view from the suite was breathtaking and the amenities were top-notch.",
+      "ar": "إقامة مذهلة! المنظر من الجناح كان خلاباً ووسائل الراحة كانت من الدرجة الأولى."
+    }
   },
   {
     "reviewId": 3,
-    "customerName": "Michael Johnson",
+    "customerName": { "en": "Michael Johnson", "ar": "مايكل جونسون" },
     "rating": 3.0,
-    "description": "Good hotel but the check-in process was a bit slow. Overall, a decent stay."
+    "description": {
+      "en": "Good hotel but the check-in process was a bit slow. Overall, a decent stay.",
+      "ar": "فندق جيد لكن عملية تسجيل الوصول كانت بطيئة بعض الشيء. بشكل عام، إقامة لا بأس بها."
+    }
   },
   {
     "reviewId": 4,
-    "customerName": "Emily White",
+    "customerName": { "en": "Emily White", "ar": "إيميلي وايت" },
     "rating": 4.0,
-    "description": "The resort is beautiful, and the pool area is perfect. The only downside was the food quality."
+    "description": {
+      "en": "The resort is beautiful, and the pool area is perfect. The only downside was the food quality.",
+      "ar": "المنتجع جميل ومنطقة المسبح مثالية. الجانب السلبي الوحيد كان جودة الطعام."
+    }
   },
   {
     "reviewId": 5,
-    "customerName": "Robert Brown",
+    "customerName": { "en": "Robert Brown", "ar": "روبرت براون" },
     "rating": 4.8,
-    "description": "Highly recommend! A wonderful stay with excellent service. The room was spacious and the beach was fantastic."
+    "description": {
+      "en": "Highly recommend! A wonderful stay with excellent service. The room was spacious and the beach was fantastic.",
+      "ar": "أنصح به بشدة! إقامة رائعة مع خدمة ممتازة. الغرفة كانت واسعة والشاطئ كان خيالياً."
+    }
   }
 ]

@@ -1,30 +1,30 @@
 [
   {
     "hotelId": 101,
-    "hotelName": "Central Park Hotel",
+    "hotelName": { "en": "Central Park Hotel", "ar": "فندق سنترال بارك" },
     "starRating": 5,
     "visitDate": "2024-01-30T14:30:00Z",
-    "cityName": "New York",
+    "cityName": { "en": "New York", "ar": "نيويورك" },
     "thumbnailUrl": "https://www.parkcentralny.com/wp-content/uploads/2025/01/PCNY_Local-Area-Map_Central-Park-768x439.jpg",
     "priceLowerBound": 150,
     "priceUpperBound": 300
   },
   {
     "hotelId": 202,
-    "hotelName": "Hollywood Grand Suites",
+    "hotelName": { "en": "Hollywood Grand Suites", "ar": "أجنحة هوليوود الكبرى" },
     "starRating": 4,
     "visitDate": "2024-01-28T12:00:00Z",
-    "cityName": "Los Angeles",
-    "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdx6gtPLbuTJtx1S0q0XaGaCoAFP8V4KecqA&s"
-    ,"priceLowerBound": 120,
+    "cityName": { "en": "Los Angeles", "ar": "لوس أنجلوس" },
+    "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdx6gtPLbuTJtx1S0q0XaGaCoAFP8V4KecqA&s",
+    "priceLowerBound": 120,
     "priceUpperBound": 250
   },
   {
     "hotelId": 303,
-    "hotelName": "Miami Beach Resort",
+    "hotelName": { "en": "Miami Beach Resort", "ar": "منتجع شاطئ ميامي" },
     "starRating": 3,
     "visitDate": "2024-01-25T10:15:00Z",
-    "cityName": "Miami",
+    "cityName": { "en": "Miami", "ar": "ميامي" },
     "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/412092105.jpg?k=71e583588d28fabc1f17ad9d37ed4e63695947071c1c9858725bb0deb55a178d&o=&hp=1",
     "priceLowerBound": 100,
     "priceUpperBound": 200

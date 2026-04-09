@@ -1,122 +1,158 @@
 [
   {
     "id": 4,
-    "name": "London",
-    "country": "United Kingdom",
-    "postOffice": "London Chief Office",
+    "name": { "en": "London", "ar": "لندن" },
+    "country": { "en": "United Kingdom", "ar": "المملكة المتحدة" },
+    "postOffice": { "en": "London Chief Office", "ar": "مكتب بريد لندن الرئيسي" },
     "numberOfHotels": 125,
     "createdAt": "2023-05-12T09:15:30Z",
     "modifiedAt": "2026-03-23T02:15:56.708Z",
-    "description": "The capital of England, famous for its historical landmarks, museums, and theaters."
+    "description": {
+      "en": "The capital of England, famous for its historical landmarks, museums, and theaters.",
+      "ar": "عاصمة إنجلترا، مشهورة بمعالمها التاريخية ومتاحفها ومسارحها."
+    }
   },
   {
     "id": 5,
-    "name": "Rome",
-    "country": "Italy",
-    "postOffice": "Roma Centro",
+    "name": { "en": "Rome", "ar": "روما" },
+    "country": { "en": "Italy", "ar": "إيطاليا" },
+    "postOffice": { "en": "Roma Centro", "ar": "مركز بريد روما" },
     "numberOfHotels": 129,
     "createdAt": "2023-06-20T11:40:00Z",
     "modifiedAt": "2026-03-05T22:24:35.739Z",
-    "description": "The capital of Italy, known for its ancient history, stunning architecture, and delicious food."
+    "description": {
+      "en": "The capital of Italy, known for its ancient history, stunning architecture, and delicious food.",
+      "ar": "عاصمة إيطاليا، المعروفة بتاريخها العريق وعمارتها المذهلة وطعامها اللذيذ."
+    }
   },
   {
     "id": 6,
-    "name": "Paris",
-    "country": "France",
-    "postOffice": "Paris-Louvre",
+    "name": { "en": "Paris", "ar": "باريس" },
+    "country": { "en": "France", "ar": "فرنسا" },
+    "postOffice": { "en": "Paris-Louvre", "ar": "بريد باريس-اللوفر" },
     "numberOfHotels": 1850,
     "createdAt": "2023-04-08T08:30:15Z",
     "modifiedAt": "2026-03-01T10:05:12Z",
-    "description": "good place"
+    "description": {
+      "en": "The city of lights, known for the Eiffel Tower, museums, and fine cuisine.",
+      "ar": "مدينة الأنوار، المشهورة ببرج إيفل والمتاحف والمطبخ الراقي."
+    }
   },
   {
     "id": 7,
-    "name": "Tokyo",
-    "country": "Japan",
-    "postOffice": "Tokyo Central Post Office",
-    "numberOfHotels": 2100,
+    "name": { "en": "Tokyo", "ar": "طوكيو" },
+    "country": { "en": "Japan", "ar": "اليابان" },
+    "postOffice": { "en": "Tokyo Central Post Office", "ar": "مكتب بريد طوكيو المركزي" },
+    "numberOfHotels": 210,
     "createdAt": "2024-01-15T03:20:00Z",
-    "modifiedAt": "2026-02-28T07:45:33Z",
-    "description": "Vibrant metropolis blending ultramodern and traditional elements."
+    "modifiedAt": "2026-04-07T03:19:11.857Z",
+    "description": {
+      "en": "Vibrant metropolis blending ultramodern and traditional elements.",
+      "ar": "مدينة نابضة بالحياة تمزج بين العناصر الحديثة والتقليدية."
+    }
   },
   {
     "id": 8,
-    "name": "New York",
-    "country": "United States",
-    "postOffice": "James A. Farley Building",
+    "name": { "en": "New York", "ar": "نيويورك" },
+    "country": { "en": "United States", "ar": "الولايات المتحدة" },
+    "postOffice": { "en": "James A. Farley Building", "ar": "مبنى جيمس أ. فارلي" },
     "numberOfHotels": 740,
     "createdAt": "2023-09-30T14:10:55Z",
     "modifiedAt": "2026-01-20T19:30:01Z",
-    "description": "The city that never sleeps — iconic skyline, culture, and energy."
+    "description": {
+      "en": "The city that never sleeps — iconic skyline, culture, and energy.",
+      "ar": "المدينة التي لا تنام — أفق مميز وثقافة وطاقة."
+    }
   },
   {
     "id": 9,
-    "name": "Istanbul",
-    "country": "Turkey",
-    "postOffice": "Istanbul Sirkeci",
+    "name": { "en": "Istanbul", "ar": "إسطنبول" },
+    "country": { "en": "Turkey", "ar": "تركيا" },
+    "postOffice": { "en": "Istanbul Sirkeci", "ar": "بريد إسطنبول سيركجي" },
     "numberOfHotels": 1450,
     "createdAt": "2024-03-10T10:25:40Z",
     "modifiedAt": "2025-12-12T13:55:19Z",
-    "description": "Where Europe meets Asia — rich history, bazaars, and stunning mosques."
+    "description": {
+      "en": "Where Europe meets Asia — rich history, bazaars, and stunning mosques.",
+      "ar": "حيث تلتقي أوروبا بآسيا — تاريخ غني وأسواق ومساجد مذهلة."
+    }
   },
   {
     "id": 10,
-    "name": "Bangkok",
-    "country": "Thailand",
-    "postOffice": "Bangkok General Post Office",
+    "name": { "en": "Bangkok", "ar": "بانكوك" },
+    "country": { "en": "Thailand", "ar": "تايلاند" },
+    "postOffice": { "en": "Bangkok General Post Office", "ar": "مكتب بريد بانكوك العام" },
     "numberOfHotels": 3200,
     "createdAt": "2023-07-05T07:45:20Z",
     "modifiedAt": "2026-03-02T11:15:50Z",
-    "description": "Vibrant capital known for ornate temples, bustling markets, and legendary street food."
+    "description": {
+      "en": "Vibrant capital known for ornate temples, bustling markets, and legendary street food.",
+      "ar": "عاصمة نابضة بالحياة تشتهر بالمعابد المزخرفة والأسواق الصاخبة وطعام الشارع الأسطوري."
+    }
   },
   {
     "id": 11,
-    "name": "Dubai",
-    "country": "United Arab Emirates",
-    "postOffice": "Dubai Central Post Office",
+    "name": { "en": "Dubai", "ar": "دبي" },
+    "country": { "en": "United Arab Emirates", "ar": "الإمارات العربية المتحدة" },
+    "postOffice": { "en": "Dubai Central Post Office", "ar": "مكتب بريد دبي المركزي" },
     "numberOfHotels": 1800,
     "createdAt": "2024-02-14T13:10:00Z",
     "modifiedAt": "2026-01-10T09:30:15Z",
-    "description": "Futuristic city of skyscrapers, luxury shopping, and desert adventures."
+    "description": {
+      "en": "Futuristic city of skyscrapers, luxury shopping, and desert adventures.",
+      "ar": "مدينة مستقبلية من ناطحات السحاب والتسوق الفاخر ومغامرات الصحراء."
+    }
   },
   {
     "id": 12,
-    "name": "Hong Kong",
-    "country": "Hong Kong",
-    "postOffice": "Hong Kong General Post Office",
+    "name": { "en": "Hong Kong", "ar": "هونغ كونغ" },
+    "country": { "en": "Hong Kong", "ar": "هونغ كونغ" },
+    "postOffice": { "en": "Hong Kong General Post Office", "ar": "مكتب بريد هونغ كونغ العام" },
     "numberOfHotels": 1600,
     "createdAt": "2023-11-22T04:55:10Z",
     "modifiedAt": "2026-02-15T18:40:30Z",
-    "description": "Dynamic harbor city famous for skyline views, dim sum, and vibrant nightlife."
+    "description": {
+      "en": "Dynamic harbor city famous for skyline views, dim sum, and vibrant nightlife.",
+      "ar": "مدينة ميناء نابضة بالحياة تشتهر بمناظر الأفق والديم سوم والحياة الليلية النابضة."
+    }
   },
   {
     "id": 13,
-    "name": "Barcelona",
-    "country": "Spain",
-    "postOffice": "Barcelona Central Post Office",
+    "name": { "en": "Barcelona", "ar": "برشلونة" },
+    "country": { "en": "Spain", "ar": "إسبانيا" },
+    "postOffice": { "en": "Barcelona Central Post Office", "ar": "مكتب بريد برشلونة المركزي" },
     "numberOfHotels": 950,
     "createdAt": "2024-05-30T16:20:45Z",
     "modifiedAt": "2025-10-08T12:25:00Z",
-    "description": "Mediterranean gem with Gaudí architecture, beaches, and lively culture."
+    "description": {
+      "en": "Mediterranean gem with Gaudí architecture, beaches, and lively culture.",
+      "ar": "جوهرة البحر المتوسط بعمارة غاودي والشواطئ والثقافة الحيوية."
+    }
   },
   {
     "id": 14,
-    "name": "Singapore",
-    "country": "Singapore",
-    "postOffice": "Singapore Post Centre",
+    "name": { "en": "Singapore", "ar": "سنغافورة" },
+    "country": { "en": "Singapore", "ar": "سنغافورة" },
+    "postOffice": { "en": "Singapore Post Centre", "ar": "مركز بريد سنغافورة" },
     "numberOfHotels": 1400,
     "createdAt": "2023-10-18T10:05:55Z",
     "modifiedAt": "2026-03-03T08:50:22Z",
-    "description": "Ultra-modern city-state blending gardens, cuisine, and futuristic architecture."
+    "description": {
+      "en": "Ultra-modern city-state blending gardens, cuisine, and futuristic architecture.",
+      "ar": "دولة-مدينة فائقة الحداثة تمزج بين الحدائق والمأكولات والعمارة المستقبلية."
+    }
   },
   {
     "id": 15,
-    "name": "Sydney",
-    "country": "Australia",
-    "postOffice": "Sydney General Post Office",
+    "name": { "en": "Sydney", "ar": "سيدني" },
+    "country": { "en": "Australia", "ar": "أستراليا" },
+    "postOffice": { "en": "Sydney General Post Office", "ar": "مكتب بريد سيدني العام" },
     "numberOfHotels": 1100,
     "createdAt": "2024-04-01T02:30:00Z",
     "modifiedAt": "2025-09-20T14:15:40Z",
-    "description": "Iconic Opera House, stunning harbor, and beach lifestyle."
+    "description": {
+      "en": "Iconic Opera House, stunning harbor, and beach lifestyle.",
+      "ar": "دار الأوبرا الشهيرة والميناء المذهل ونمط حياة الشاطئ."
+    }
   }
 ]

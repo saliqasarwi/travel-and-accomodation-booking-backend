@@ -1,25 +1,28 @@
 {
   "id": 1,
-  "hotelName": "Sunset Resort",
-  "location": "Bali, Indonesia",
-  "description": "A luxurious resort overlooking the ocean with top-notch amenities and breathtaking views.",
-  "hotelType": "Resort",
+  "hotelName": { "en": "Sunset Resort", "ar": "منتجع الغروب" },
+  "location": { "en": "Bali, Indonesia", "ar": "بالي، إندونيسيا" },
+  "description": {
+    "en": "A luxurious resort overlooking the ocean with top-notch amenities and breathtaking views.",
+    "ar": "منتجع فاخر يطل على المحيط مع وسائل راحة من الدرجة الأولى وإطلالات خلابة."
+  },
+  "hotelType": { "en": "Resort", "ar": "منتجع" },
   "starRating": 5,
   "latitude": -8.3405,
   "longitude": 115.0915,
   "rooms": [
     {
       "id": 101,
-      "name": "Ocean View Suite",
-      "type": "Suite",
+      "name": { "en": "Ocean View Suite", "ar": "جناح إطلالة المحيط" },
+      "type": { "en": "Suite", "ar": "جناح" },
       "price": 500.0,
       "available": true,
       "maxOccupancy": 4
     },
     {
       "id": 102,
-      "name": "Garden View Room",
-      "type": "Standard",
+      "name": { "en": "Garden View Room", "ar": "غرفة إطلالة الحديقة" },
+      "type": { "en": "Standard", "ar": "قياسية" },
       "price": 200.0,
       "available": true,
       "maxOccupancy": 2
@@ -31,18 +34,27 @@
   "amenities": [
     {
       "id": 1,
-      "name": "Free Wi-Fi",
-      "description": "Stay connected with high-speed internet throughout the resort."
+      "name": { "en": "Free Wi-Fi", "ar": "واي فاي مجاني" },
+      "description": {
+        "en": "Stay connected with high-speed internet throughout the resort.",
+        "ar": "ابقَ متصلاً بإنترنت عالي السرعة في جميع أنحاء المنتجع."
+      }
     },
     {
       "id": 2,
-      "name": "Swimming Pool",
-      "description": "An infinity pool with stunning ocean views."
+      "name": { "en": "Swimming Pool", "ar": "مسبح" },
+      "description": {
+        "en": "An infinity pool with stunning ocean views.",
+        "ar": "مسبح لا متناهي مع إطلالات خلابة على المحيط."
+      }
     },
     {
       "id": 3,
-      "name": "Spa",
-      "description": "A full-service spa offering massages and beauty treatments."
+      "name": { "en": "Spa", "ar": "سبا" },
+      "description": {
+        "en": "A full-service spa offering massages and beauty treatments.",
+        "ar": "سبا متكامل الخدمات يقدم المساج وعلاجات التجميل."
+      }
     }
   ]
 }

@@ -1,448 +1,616 @@
 [
   {
     "id": 1,
-    "hotelName": "Sunset Resort",
+    "hotelName": { "en": "Sunset Resort", "ar": "منتجع الغروب" },
     "starRating": 5,
     "availableRooms": 10,
-    "location": "Bali, Indonesia",
-    "description": "A luxurious resort overlooking the ocean with top-notch amenities and breathtaking sunset views.",
+    "location": { "en": "Bali, Indonesia", "ar": "بالي، إندونيسيا" },
+    "description": {
+      "en": "A luxurious resort overlooking the ocean with top-notch amenities and breathtaking sunset views.",
+      "ar": "منتجع فاخر يطل على المحيط مع وسائل راحة من الدرجة الأولى وإطلالات غروب خلابة."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Free Wi-Fi",
-        "description": "High-speed internet access throughout the resort."
+        "name": { "en": "Free Wi-Fi", "ar": "واي فاي مجاني" },
+        "description": {
+          "en": "High-speed internet access throughout the resort.",
+          "ar": "إنترنت عالي السرعة في جميع أنحاء المنتجع."
+        }
       },
       {
         "id": 2,
-        "name": "Swimming Pool",
-        "description": "Infinity pool with stunning ocean views."
+        "name": { "en": "Swimming Pool", "ar": "مسبح" },
+        "description": {
+          "en": "Infinity pool with stunning ocean views.",
+          "ar": "مسبح لا متناهي مع إطلالات خلابة على المحيط."
+        }
       },
       {
         "id": 3,
-        "name": "Spa",
-        "description": "Full-service spa offering massages and treatments."
+        "name": { "en": "Spa", "ar": "سبا" },
+        "description": {
+          "en": "Full-service spa offering massages and treatments.",
+          "ar": "سبا متكامل الخدمات يقدم المساج والعلاجات."
+        }
       }
     ],
     "createdAt": "2023-02-15T10:30:00Z",
     "modifiedAt": "2025-11-20T14:45:00Z",
-    "hotelType": "Resort",
+    "hotelType": { "en": "Resort", "ar": "منتجع" },
     "cityId": 101,
     "latitude": -8.3405,
     "longitude": 115.0915
   },
   {
     "id": 2,
-    "hotelName": "Mountain Retreat",
-    "starRating": 4,
+    "hotelName": { "en": "Mountain Retreat", "ar": "ملاذ الجبل" },
+    "starRating": 4.5,
     "availableRooms": 8,
-    "location": "Swiss Alps, Switzerland",
-    "description": "A peaceful mountain retreat with panoramic alpine views and a cozy escape from city life.",
+    "location": { "en": "Swiss Alps, Switzerland", "ar": "جبال الألب السويسرية، سويسرا" },
+    "description": {
+      "en": "A peaceful mountain retreat with panoramic alpine views and a cozy escape from city life.",
+      "ar": "ملاذ جبلي هادئ مع إطلالات بانورامية على جبال الألب وملجأ مريح من حياة المدينة."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Free Breakfast",
-        "description": "Delicious continental breakfast included."
+        "name": { "en": "Free Breakfast", "ar": "إفطار مجاني" },
+        "description": {
+          "en": "Delicious continental breakfast included.",
+          "ar": "إفطار قاري لذيذ مشمول."
+        }
       },
       {
         "id": 2,
-        "name": "Hot Tub",
-        "description": "Outdoor hot tub with mountain views."
+        "name": { "en": "Hot Tub", "ar": "جاكوزي ساخن" },
+        "description": {
+          "en": "Outdoor hot tub with mountain views.",
+          "ar": "جاكوزي خارجي مع إطلالات على الجبال."
+        }
       },
       {
         "id": 3,
-        "name": "Sauna",
-        "description": "Traditional sauna for relaxation."
+        "name": { "en": "Sauna", "ar": "ساونا" },
+        "description": {
+          "en": "Traditional sauna for relaxation.",
+          "ar": "ساونا تقليدية للاسترخاء."
+        }
       }
     ],
     "createdAt": "2023-04-10T09:15:22Z",
-    "modifiedAt": "2026-01-05T16:20:10Z",
-    "hotelType": "Boutique",
+    "modifiedAt": "2026-03-27T01:14:00.438Z",
+    "hotelType": { "en": "Boutique", "ar": "بوتيك" },
     "cityId": 102,
     "latitude": 46.8182,
     "longitude": 8.2275
   },
   {
     "id": 3,
-    "hotelName": "City Center Inn",
+    "hotelName": { "en": "City Center Inn", "ar": "نزل وسط المدينة" },
     "starRating": 3,
     "availableRooms": 15,
-    "location": "New York, USA",
-    "description": "A modern hotel in the heart of the city with convenient access to shopping, dining, and attractions.",
+    "location": { "en": "New York, USA", "ar": "نيويورك، الولايات المتحدة" },
+    "description": {
+      "en": "A modern hotel in the heart of the city with convenient access to shopping, dining, and attractions.",
+      "ar": "فندق حديث في قلب المدينة مع وصول سهل للتسوق والمطاعم والمعالم السياحية."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Fitness Center",
-        "description": "Fully equipped gym open 24/7."
+        "name": { "en": "Fitness Center", "ar": "مركز لياقة بدنية" },
+        "description": {
+          "en": "Fully equipped gym open 24/7.",
+          "ar": "صالة رياضية مجهزة بالكامل مفتوحة على مدار الساعة."
+        }
       },
       {
         "id": 2,
-        "name": "24/7 Concierge",
-        "description": "Assistance available around the clock."
+        "name": { "en": "24/7 Concierge", "ar": "خدمة كونسيرج على مدار الساعة" },
+        "description": {
+          "en": "Assistance available around the clock.",
+          "ar": "مساعدة متاحة على مدار الساعة."
+        }
       },
       {
         "id": 3,
-        "name": "Restaurant",
-        "description": "On-site dining with city views."
+        "name": { "en": "Restaurant", "ar": "مطعم" },
+        "description": {
+          "en": "On-site dining with city views.",
+          "ar": "مطعم داخلي مع إطلالات على المدينة."
+        }
       }
     ],
     "createdAt": "2023-07-22T13:40:00Z",
     "modifiedAt": "2025-12-18T11:55:30Z",
-    "hotelType": "Hotel",
+    "hotelType": { "en": "Hotel", "ar": "فندق" },
     "cityId": 103,
     "latitude": 40.7128,
     "longitude": -74.006
   },
   {
     "id": 4,
-    "hotelName": "Tropical Paradise",
+    "hotelName": { "en": "Tropical Paradise", "ar": "الجنة الاستوائية" },
     "starRating": 5,
     "availableRooms": 6,
-    "location": "Maldives",
-    "description": "An exclusive island resort with overwater villas, crystal-clear waters, and tropical luxury.",
+    "location": { "en": "Maldives", "ar": "المالديف" },
+    "description": {
+      "en": "An exclusive island resort with overwater villas, crystal-clear waters, and tropical luxury.",
+      "ar": "منتجع جزيرة حصري مع فلل فوق الماء ومياه صافية كالكريستال ورفاهية استوائية."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Private Beach",
-        "description": "Exclusive beach access for guests."
+        "name": { "en": "Private Beach", "ar": "شاطئ خاص" },
+        "description": {
+          "en": "Exclusive beach access for guests.",
+          "ar": "وصول حصري للشاطئ للنزلاء."
+        }
       },
       {
         "id": 2,
-        "name": "Water Sports",
-        "description": "Snorkeling, diving, and ocean activities."
+        "name": { "en": "Water Sports", "ar": "رياضات مائية" },
+        "description": {
+          "en": "Snorkeling, diving, and ocean activities.",
+          "ar": "غوص سطحي وغوص عميق وأنشطة بحرية."
+        }
       },
       {
         "id": 3,
-        "name": "Sunset Dining",
-        "description": "Fine dining with panoramic sea views."
+        "name": { "en": "Sunset Dining", "ar": "عشاء الغروب" },
+        "description": {
+          "en": "Fine dining with panoramic sea views.",
+          "ar": "مأكولات راقية مع إطلالات بانورامية على البحر."
+        }
       }
     ],
     "createdAt": "2024-01-08T08:20:45Z",
     "modifiedAt": "2026-02-10T17:30:15Z",
-    "hotelType": "Resort",
+    "hotelType": { "en": "Resort", "ar": "منتجع" },
     "cityId": 104,
     "latitude": -2.9737,
     "longitude": 73.5367
   },
   {
     "id": 5,
-    "hotelName": "Urban Suites",
+    "hotelName": { "en": "Urban Suites", "ar": "أجنحة المدينة" },
     "starRating": 4,
     "availableRooms": 12,
-    "location": "Tokyo, Japan",
-    "description": "A stylish suite hotel in vibrant Tokyo offering modern comfort and easy access to the city.",
+    "location": { "en": "Tokyo, Japan", "ar": "طوكيو، اليابان" },
+    "description": {
+      "en": "A stylish suite hotel in vibrant Tokyo offering modern comfort and easy access to the city.",
+      "ar": "فندق أجنحة أنيق في طوكيو النابضة بالحياة يقدم راحة حديثة ووصول سهل للمدينة."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "On-Site Restaurant",
-        "description": "Japanese and international cuisine."
+        "name": { "en": "On-Site Restaurant", "ar": "مطعم داخلي" },
+        "description": {
+          "en": "Japanese and international cuisine.",
+          "ar": "مأكولات يابانية وعالمية."
+        }
       },
       {
         "id": 2,
-        "name": "Room Service",
-        "description": "Available around the clock."
+        "name": { "en": "Room Service", "ar": "خدمة الغرف" },
+        "description": {
+          "en": "Available around the clock.",
+          "ar": "متاحة على مدار الساعة."
+        }
       },
       {
         "id": 3,
-        "name": "Rooftop Bar",
-        "description": "Drinks with skyline views."
+        "name": { "en": "Rooftop Bar", "ar": "بار على السطح" },
+        "description": {
+          "en": "Drinks with skyline views.",
+          "ar": "مشروبات مع إطلالات على أفق المدينة."
+        }
       }
     ],
     "createdAt": "2023-09-05T11:10:00Z",
     "modifiedAt": "2026-03-01T09:45:20Z",
-    "hotelType": "Hotel",
+    "hotelType": { "en": "Hotel", "ar": "فندق" },
     "cityId": 105,
     "latitude": 35.6762,
     "longitude": 139.6503
   },
   {
     "id": 6,
-    "hotelName": "Desert Oasis Resort",
+    "hotelName": { "en": "Desert Oasis Resort", "ar": "منتجع واحة الصحراء" },
     "starRating": 5,
     "availableRooms": 8,
-    "location": "Dubai, UAE",
-    "description": "A luxury desert resort offering tranquility, dune views, and elegant Arabian hospitality.",
+    "location": { "en": "Dubai, UAE", "ar": "دبي، الإمارات" },
+    "description": {
+      "en": "A luxury desert resort offering tranquility, dune views, and elegant Arabian hospitality.",
+      "ar": "منتجع صحراوي فاخر يقدم الهدوء وإطلالات الكثبان وضيافة عربية أنيقة."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Private Pool",
-        "description": "Many villas feature their own private pool."
+        "name": { "en": "Private Pool", "ar": "مسبح خاص" },
+        "description": {
+          "en": "Many villas feature their own private pool.",
+          "ar": "العديد من الفلل تتميز بمسبح خاص."
+        }
       },
       {
         "id": 2,
-        "name": "Camel Ride",
-        "description": "Traditional desert adventure experience."
+        "name": { "en": "Camel Ride", "ar": "ركوب الجمال" },
+        "description": {
+          "en": "Traditional desert adventure experience.",
+          "ar": "تجربة مغامرة صحراوية تقليدية."
+        }
       },
       {
         "id": 3,
-        "name": "Luxury Spa",
-        "description": "Relaxing treatments inspired by the desert."
+        "name": { "en": "Luxury Spa", "ar": "سبا فاخر" },
+        "description": {
+          "en": "Relaxing treatments inspired by the desert.",
+          "ar": "علاجات استرخاء مستوحاة من الصحراء."
+        }
       }
     ],
     "createdAt": "2024-03-14T15:25:30Z",
     "modifiedAt": "2025-10-22T12:10:55Z",
-    "hotelType": "Resort",
+    "hotelType": { "en": "Resort", "ar": "منتجع" },
     "cityId": 106,
     "latitude": 25.276987,
     "longitude": 55.296249
   },
   {
     "id": 7,
-    "hotelName": "Coastal Breeze",
+    "hotelName": { "en": "Coastal Breeze", "ar": "نسيم الساحل" },
     "starRating": 4,
     "availableRooms": 10,
-    "location": "San Diego, USA",
-    "description": "A charming coastal hotel near the beach with relaxed vibes and ocean-inspired comfort.",
+    "location": { "en": "San Diego, USA", "ar": "سان دييغو، الولايات المتحدة" },
+    "description": {
+      "en": "A charming coastal hotel near the beach with relaxed vibes and ocean-inspired comfort.",
+      "ar": "فندق ساحلي ساحر بالقرب من الشاطئ مع أجواء مريحة وراحة مستوحاة من المحيط."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Beach Access",
-        "description": "Private beach steps away from the hotel."
+        "name": { "en": "Beach Access", "ar": "وصول للشاطئ" },
+        "description": {
+          "en": "Private beach steps away from the hotel.",
+          "ar": "شاطئ خاص على بعد خطوات من الفندق."
+        }
       },
       {
         "id": 2,
-        "name": "Beach Bar",
-        "description": "Sunset drinks by the shore."
+        "name": { "en": "Beach Bar", "ar": "بار الشاطئ" },
+        "description": {
+          "en": "Sunset drinks by the shore.",
+          "ar": "مشروبات الغروب على الشاطئ."
+        }
       },
       {
         "id": 3,
-        "name": "Outdoor Jacuzzi",
-        "description": "Ocean-view relaxation area."
+        "name": { "en": "Outdoor Jacuzzi", "ar": "جاكوزي خارجي" },
+        "description": {
+          "en": "Ocean-view relaxation area.",
+          "ar": "منطقة استرخاء مع إطلالة على المحيط."
+        }
       }
     ],
     "createdAt": "2023-11-30T07:50:10Z",
     "modifiedAt": "2026-01-15T18:40:00Z",
-    "hotelType": "Hotel",
+    "hotelType": { "en": "Hotel", "ar": "فندق" },
     "cityId": 107,
     "latitude": 32.7157,
     "longitude": -117.1611
   },
   {
     "id": 9,
-    "hotelName": "Grand Plaza Hotel",
+    "hotelName": { "en": "Grand Plaza Hotel", "ar": "فندق غراند بلازا" },
     "starRating": 5,
     "availableRooms": 10,
-    "location": "Paris, France",
-    "description": "An elegant city-center hotel with premium service and unforgettable Parisian charm.",
+    "location": { "en": "Paris, France", "ar": "باريس، فرنسا" },
+    "description": {
+      "en": "An elegant city-center hotel with premium service and unforgettable Parisian charm.",
+      "ar": "فندق أنيق في وسط المدينة مع خدمة متميزة وسحر باريسي لا يُنسى."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "City Views",
-        "description": "Beautiful views from selected rooms."
+        "name": { "en": "City Views", "ar": "إطلالات على المدينة" },
+        "description": {
+          "en": "Beautiful views from selected rooms.",
+          "ar": "إطلالات جميلة من غرف مختارة."
+        }
       },
       {
         "id": 2,
-        "name": "Fine Dining",
-        "description": "Refined French cuisine on site."
+        "name": { "en": "Fine Dining", "ar": "مأكولات راقية" },
+        "description": {
+          "en": "Refined French cuisine on site.",
+          "ar": "مأكولات فرنسية راقية في الموقع."
+        }
       },
       {
         "id": 3,
-        "name": "Luxury Lounge",
-        "description": "Exclusive guest lounge for relaxation."
+        "name": { "en": "Luxury Lounge", "ar": "صالة فاخرة" },
+        "description": {
+          "en": "Exclusive guest lounge for relaxation.",
+          "ar": "صالة حصرية للنزلاء للاسترخاء."
+        }
       }
     ],
     "createdAt": "2023-08-25T12:05:55Z",
     "modifiedAt": "2026-02-28T10:15:40Z",
-    "hotelType": "Hotel",
+    "hotelType": { "en": "Hotel", "ar": "فندق" },
     "cityId": 109,
     "latitude": 48.8566,
     "longitude": 2.3522
   },
   {
     "id": 10,
-    "hotelName": "Safari Lodge",
+    "hotelName": { "en": "Safari Lodge", "ar": "نزل السفاري" },
     "starRating": 5,
     "availableRooms": 5,
-    "location": "Kruger National Park, South Africa",
-    "description": "An exclusive safari lodge offering luxury accommodation and unforgettable wildlife experiences.",
+    "location": { "en": "Kruger National Park, South Africa", "ar": "حديقة كروغر الوطنية، جنوب أفريقيا" },
+    "description": {
+      "en": "An exclusive safari lodge offering luxury accommodation and unforgettable wildlife experiences.",
+      "ar": "نزل سفاري حصري يقدم إقامة فاخرة وتجارب حياة برية لا تُنسى."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Safari Drives",
-        "description": "Daily guided wildlife viewing."
+        "name": { "en": "Safari Drives", "ar": "رحلات سفاري" },
+        "description": {
+          "en": "Daily guided wildlife viewing.",
+          "ar": "مشاهدة يومية للحياة البرية بإرشاد."
+        }
       },
       {
         "id": 2,
-        "name": "Outdoor Dining",
-        "description": "Meals with savannah views."
+        "name": { "en": "Outdoor Dining", "ar": "تناول طعام في الهواء الطلق" },
+        "description": {
+          "en": "Meals with savannah views.",
+          "ar": "وجبات مع إطلالات على السافانا."
+        }
       },
       {
         "id": 3,
-        "name": "Game Walks",
-        "description": "Guided close-up nature experiences."
+        "name": { "en": "Game Walks", "ar": "جولات مشي استكشافية" },
+        "description": {
+          "en": "Guided close-up nature experiences.",
+          "ar": "تجارب طبيعية عن قرب بإرشاد."
+        }
       }
     ],
     "createdAt": "2024-02-20T16:45:00Z",
     "modifiedAt": "2025-12-05T08:30:15Z",
-    "hotelType": "Lodge",
+    "hotelType": { "en": "Lodge", "ar": "نزل" },
     "cityId": 110,
     "latitude": -24.0127,
     "longitude": 31.5604
   },
   {
     "id": 11,
-    "hotelName": "La Rambla Luxury",
+    "hotelName": { "en": "La Rambla Luxury", "ar": "لا رامبلا الفاخر" },
     "starRating": 5,
     "availableRooms": 9,
-    "location": "Barcelona, Spain",
-    "description": "A sophisticated luxury hotel close to the city’s most vibrant streets and cultural landmarks.",
+    "location": { "en": "Barcelona, Spain", "ar": "برشلونة، إسبانيا" },
+    "description": {
+      "en": "A sophisticated luxury hotel close to the city's most vibrant streets and cultural landmarks.",
+      "ar": "فندق فاخر راقٍ بالقرب من أكثر شوارع المدينة حيوية ومعالمها الثقافية."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Terrace Lounge",
-        "description": "Relaxing rooftop seating area."
+        "name": { "en": "Terrace Lounge", "ar": "صالة التراس" },
+        "description": {
+          "en": "Relaxing rooftop seating area.",
+          "ar": "منطقة جلوس مريحة على السطح."
+        }
       },
       {
         "id": 2,
-        "name": "Breakfast Buffet",
-        "description": "Fresh daily breakfast selection."
+        "name": { "en": "Breakfast Buffet", "ar": "بوفيه إفطار" },
+        "description": {
+          "en": "Fresh daily breakfast selection.",
+          "ar": "تشكيلة إفطار طازجة يومياً."
+        }
       },
       {
         "id": 3,
-        "name": "Airport Shuttle",
-        "description": "Convenient transportation service."
+        "name": { "en": "Airport Shuttle", "ar": "نقل من وإلى المطار" },
+        "description": {
+          "en": "Convenient transportation service.",
+          "ar": "خدمة نقل مريحة."
+        }
       }
     ],
     "createdAt": "2023-10-18T09:55:30Z",
     "modifiedAt": "2026-02-15T13:20:45Z",
-    "hotelType": "Hotel",
+    "hotelType": { "en": "Hotel", "ar": "فندق" },
     "cityId": 111,
     "latitude": 41.3851,
     "longitude": 2.1734
   },
   {
     "id": 12,
-    "hotelName": "Marina Bay Elegance",
+    "hotelName": { "en": "Marina Bay Elegance", "ar": "أناقة مارينا باي" },
     "starRating": 5,
     "availableRooms": 14,
-    "location": "Singapore",
-    "description": "A refined urban escape offering modern luxury, waterfront views, and excellent service.",
+    "location": { "en": "Singapore", "ar": "سنغافورة" },
+    "description": {
+      "en": "A refined urban escape offering modern luxury, waterfront views, and excellent service.",
+      "ar": "ملاذ حضري راقٍ يقدم رفاهية حديثة وإطلالات على الواجهة البحرية وخدمة ممتازة."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Infinity Pool",
-        "description": "Skyline pool with panoramic views."
+        "name": { "en": "Infinity Pool", "ar": "مسبح لا متناهي" },
+        "description": {
+          "en": "Skyline pool with panoramic views.",
+          "ar": "مسبح مع إطلالات بانورامية على أفق المدينة."
+        }
       },
       {
         "id": 2,
-        "name": "Business Center",
-        "description": "Work-friendly facilities for guests."
+        "name": { "en": "Business Center", "ar": "مركز أعمال" },
+        "description": {
+          "en": "Work-friendly facilities for guests.",
+          "ar": "مرافق ملائمة للعمل للنزلاء."
+        }
       },
       {
         "id": 3,
-        "name": "Fitness Studio",
-        "description": "Modern gym with premium equipment."
+        "name": { "en": "Fitness Studio", "ar": "استوديو لياقة" },
+        "description": {
+          "en": "Modern gym with premium equipment.",
+          "ar": "صالة رياضية حديثة بمعدات متميزة."
+        }
       }
     ],
     "createdAt": "2024-04-05T14:10:20Z",
     "modifiedAt": "2026-03-02T10:05:55Z",
-    "hotelType": "Hotel",
+    "hotelType": { "en": "Hotel", "ar": "فندق" },
     "cityId": 112,
     "latitude": 1.3521,
     "longitude": 103.8198
   },
   {
     "id": 13,
-    "hotelName": "Harbour View Retreat",
+    "hotelName": { "en": "Harbour View Retreat", "ar": "ملاذ إطلالة الميناء" },
     "starRating": 5,
     "availableRooms": 11,
-    "location": "Sydney, Australia",
-    "description": "A luxury retreat with beautiful harbour scenery and spacious modern rooms.",
+    "location": { "en": "Sydney, Australia", "ar": "سيدني، أستراليا" },
+    "description": {
+      "en": "A luxury retreat with beautiful harbour scenery and spacious modern rooms.",
+      "ar": "ملاذ فاخر مع مناظر ميناء جميلة وغرف حديثة واسعة."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1578683015146-bda5d6928a2a?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Harbour View Rooms",
-        "description": "Selected rooms overlook the water."
+        "name": { "en": "Harbour View Rooms", "ar": "غرف إطلالة الميناء" },
+        "description": {
+          "en": "Selected rooms overlook the water.",
+          "ar": "غرف مختارة تطل على المياه."
+        }
       },
       {
         "id": 2,
-        "name": "Signature Restaurant",
-        "description": "Fine dining with local flavors."
+        "name": { "en": "Signature Restaurant", "ar": "مطعم مميز" },
+        "description": {
+          "en": "Fine dining with local flavors.",
+          "ar": "مأكولات راقية بنكهات محلية."
+        }
       },
       {
         "id": 3,
-        "name": "Spa & Wellness",
-        "description": "Relaxation and wellness facilities."
+        "name": { "en": "Spa & Wellness", "ar": "سبا وعافية" },
+        "description": {
+          "en": "Relaxation and wellness facilities.",
+          "ar": "مرافق استرخاء وعافية."
+        }
       }
     ],
     "createdAt": "2023-12-01T11:25:40Z",
     "modifiedAt": "2025-11-10T15:50:30Z",
-    "hotelType": "Hotel",
+    "hotelType": { "en": "Hotel", "ar": "فندق" },
     "cityId": 113,
     "latitude": -33.8688,
     "longitude": 151.2093
   },
   {
     "id": 14,
-    "hotelName": "Chao Phraya Riverside",
+    "hotelName": { "en": "Chao Phraya Riverside", "ar": "تشاو فرايا ريفرسايد" },
     "starRating": 5,
     "availableRooms": 7,
-    "location": "Bangkok, Thailand",
-    "description": "A serene riverside resort blending comfort, elegance, and vibrant city access.",
+    "location": { "en": "Bangkok, Thailand", "ar": "بانكوك، تايلاند" },
+    "description": {
+      "en": "A serene riverside resort blending comfort, elegance, and vibrant city access.",
+      "ar": "منتجع هادئ على ضفاف النهر يمزج بين الراحة والأناقة والوصول لحيوية المدينة."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "River Views",
-        "description": "Scenic waterfront rooms and dining."
+        "name": { "en": "River Views", "ar": "إطلالات على النهر" },
+        "description": {
+          "en": "Scenic waterfront rooms and dining.",
+          "ar": "غرف ومطاعم بإطلالات على الواجهة المائية."
+        }
       },
       {
         "id": 2,
-        "name": "Boat Transfer",
-        "description": "Convenient river transport service."
+        "name": { "en": "Boat Transfer", "ar": "نقل بالقارب" },
+        "description": {
+          "en": "Convenient river transport service.",
+          "ar": "خدمة نقل نهرية مريحة."
+        }
       },
       {
         "id": 3,
-        "name": "Traditional Spa",
-        "description": "Thai-inspired relaxation treatments."
+        "name": { "en": "Traditional Spa", "ar": "سبا تقليدي" },
+        "description": {
+          "en": "Thai-inspired relaxation treatments.",
+          "ar": "علاجات استرخاء مستوحاة من التايلاندية."
+        }
       }
     ],
     "createdAt": "2024-05-20T07:40:15Z",
     "modifiedAt": "2026-01-25T12:35:00Z",
-    "hotelType": "Resort",
+    "hotelType": { "en": "Resort", "ar": "منتجع" },
     "cityId": 114,
     "latitude": 13.7563,
     "longitude": 100.5018
   },
   {
     "id": 15,
-    "hotelName": "Victoria Harbour Luxe",
+    "hotelName": { "en": "Victoria Harbour Luxe", "ar": "فيكتوريا هاربور الفاخر" },
     "starRating": 5,
     "availableRooms": 13,
-    "location": "Hong Kong",
-    "description": "A high-end hotel overlooking the harbour with sleek design and premium hospitality.",
+    "location": { "en": "Hong Kong", "ar": "هونغ كونغ" },
+    "description": {
+      "en": "A high-end hotel overlooking the harbour with sleek design and premium hospitality.",
+      "ar": "فندق راقٍ يطل على الميناء بتصميم أنيق وضيافة متميزة."
+    },
     "imageUrl": "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=80",
     "amenities": [
       {
         "id": 1,
-        "name": "Executive Lounge",
-        "description": "Private lounge for premium guests."
+        "name": { "en": "Executive Lounge", "ar": "صالة تنفيذية" },
+        "description": {
+          "en": "Private lounge for premium guests.",
+          "ar": "صالة خاصة للنزلاء المتميزين."
+        }
       },
       {
         "id": 2,
-        "name": "Harbour Dining",
-        "description": "Dining spaces with stunning views."
+        "name": { "en": "Harbour Dining", "ar": "مطعم الميناء" },
+        "description": {
+          "en": "Dining spaces with stunning views.",
+          "ar": "مساحات طعام مع إطلالات خلابة."
+        }
       },
       {
         "id": 3,
-        "name": "Luxury Transfers",
-        "description": "Private transfer arrangements available."
+        "name": { "en": "Luxury Transfers", "ar": "نقل فاخر" },
+        "description": {
+          "en": "Private transfer arrangements available.",
+          "ar": "ترتيبات نقل خاصة متاحة."
+        }
       }
     ],
     "createdAt": "2023-06-30T16:15:10Z",
     "modifiedAt": "2026-02-20T09:50:25Z",
-    "hotelType": "Hotel",
+    "hotelType": { "en": "Hotel", "ar": "فندق" },
     "cityId": 115,
     "latitude": 22.3964,
     "longitude": 114.1095

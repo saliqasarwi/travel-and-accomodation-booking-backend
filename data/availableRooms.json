@@ -4,12 +4,12 @@
     "roomId": 101,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop",
-    "roomType": "Ocean View Suite",
+    "roomType": { "en": "Ocean View Suite", "ar": "جناح إطلالة المحيط" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 1, "name": "Free Wi-Fi", "description": "Stay connected with high-speed internet throughout the resort." },
-      { "id": 2, "name": "Swimming Pool", "description": "An infinity pool with stunning ocean views." }
+      { "id": 1, "name": { "en": "Free Wi-Fi", "ar": "واي فاي مجاني" }, "description": { "en": "Stay connected with high-speed internet throughout the resort.", "ar": "ابقَ متصلاً بإنترنت عالي السرعة في جميع أنحاء المنتجع." } },
+      { "id": 2, "name": { "en": "Swimming Pool", "ar": "مسبح" }, "description": { "en": "An infinity pool with stunning ocean views.", "ar": "مسبح لا متناهي مع إطلالات خلابة على المحيط." } }
     ],
     "price": 500,
     "availability": false
@@ -19,12 +19,12 @@
     "roomId": 102,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Garden View Room",
+    "roomType": { "en": "Garden View Room", "ar": "غرفة إطلالة الحديقة" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 3, "name": "Balcony", "description": "Private balcony with tropical garden view." },
-      { "id": 4, "name": "Mini Bar", "description": "In-room mini bar with refreshments." }
+      { "id": 3, "name": { "en": "Balcony", "ar": "شرفة" }, "description": { "en": "Private balcony with tropical garden view.", "ar": "شرفة خاصة مع إطلالة على الحديقة الاستوائية." } },
+      { "id": 4, "name": { "en": "Mini Bar", "ar": "ميني بار" }, "description": { "en": "In-room mini bar with refreshments.", "ar": "ميني بار في الغرفة مع مرطبات." } }
     ],
     "price": 380,
     "availability": true
@@ -34,11 +34,11 @@
     "roomId": 103,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Standard Room",
+    "roomType": { "en": "Standard Room", "ar": "غرفة قياسية" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
     "amenities": [
-      { "id": 5, "name": "Air Conditioning", "description": "Cool and comfortable air conditioning." }
+      { "id": 5, "name": { "en": "Air Conditioning", "ar": "تكييف هواء" }, "description": { "en": "Cool and comfortable air conditioning.", "ar": "تكييف بارد ومريح." } }
     ],
     "price": 280,
     "availability": true
@@ -49,12 +49,12 @@
     "roomId": 201,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1611971263023-105938ce12ed?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Deluxe Room",
+    "roomType": { "en": "Deluxe Room", "ar": "غرفة ديلوكس" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
     "amenities": [
-      { "id": 6, "name": "Gym", "description": "Fully equipped gym with modern fitness equipment." },
-      { "id": 7, "name": "Spa", "description": "Relax and rejuvenate with spa treatments." }
+      { "id": 6, "name": { "en": "Gym", "ar": "صالة رياضية" }, "description": { "en": "Fully equipped gym with modern fitness equipment.", "ar": "صالة رياضية مجهزة بالكامل بمعدات لياقة حديثة." } },
+      { "id": 7, "name": { "en": "Spa", "ar": "سبا" }, "description": { "en": "Relax and rejuvenate with spa treatments.", "ar": "استرخِ وجدد نشاطك مع علاجات السبا." } }
     ],
     "price": 250,
     "availability": true
@@ -64,12 +64,12 @@
     "roomId": 202,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Alpine View Room",
+    "roomType": { "en": "Alpine View Room", "ar": "غرفة إطلالة جبال الألب" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 8, "name": "Mountain View", "description": "Panoramic view of the Alps." },
-      { "id": 9, "name": "Fireplace", "description": "Warm fireplace for cozy evenings." }
+      { "id": 8, "name": { "en": "Mountain View", "ar": "إطلالة جبلية" }, "description": { "en": "Panoramic view of the Alps.", "ar": "إطلالة بانورامية على جبال الألب." } },
+      { "id": 9, "name": { "en": "Fireplace", "ar": "مدفأة" }, "description": { "en": "Warm fireplace for cozy evenings.", "ar": "مدفأة دافئة لأمسيات مريحة." } }
     ],
     "price": 320,
     "availability": false
@@ -79,11 +79,11 @@
     "roomId": 203,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Family Chalet Room",
+    "roomType": { "en": "Family Chalet Room", "ar": "غرفة شاليه عائلية" },
     "capacityOfAdults": 4,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 10, "name": "Heating", "description": "Adjustable heating system." }
+      { "id": 10, "name": { "en": "Heating", "ar": "تدفئة" }, "description": { "en": "Adjustable heating system.", "ar": "نظام تدفئة قابل للتعديل." } }
     ],
     "price": 410,
     "availability": true
@@ -94,11 +94,11 @@
     "roomId": 301,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop",
-    "roomType": "Standard Room",
+    "roomType": { "en": "Standard Room", "ar": "غرفة قياسية" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 11, "name": "24/7 Reception", "description": "Always available to assist you." }
+      { "id": 11, "name": { "en": "24/7 Reception", "ar": "استقبال على مدار الساعة" }, "description": { "en": "Always available to assist you.", "ar": "متاحون دائماً لمساعدتك." } }
     ],
     "price": 180,
     "availability": true
@@ -108,12 +108,12 @@
     "roomId": 302,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "City View Room",
+    "roomType": { "en": "City View Room", "ar": "غرفة إطلالة المدينة" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
     "amenities": [
-      { "id": 12, "name": "City View", "description": "Overlooks the city skyline." },
-      { "id": 13, "name": "Desk", "description": "Comfortable work desk." }
+      { "id": 12, "name": { "en": "City View", "ar": "إطلالة على المدينة" }, "description": { "en": "Overlooks the city skyline.", "ar": "تطل على أفق المدينة." } },
+      { "id": 13, "name": { "en": "Desk", "ar": "مكتب" }, "description": { "en": "Comfortable work desk.", "ar": "مكتب عمل مريح." } }
     ],
     "price": 210,
     "availability": true
@@ -123,11 +123,11 @@
     "roomId": 303,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Family Room",
+    "roomType": { "en": "Family Room", "ar": "غرفة عائلية" },
     "capacityOfAdults": 3,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 14, "name": "Extra Bed", "description": "Additional bed for family stays." }
+      { "id": 14, "name": { "en": "Extra Bed", "ar": "سرير إضافي" }, "description": { "en": "Additional bed for family stays.", "ar": "سرير إضافي للإقامات العائلية." } }
     ],
     "price": 260,
     "availability": true
@@ -138,12 +138,12 @@
     "roomId": 401,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1611971262702-ed56db509bd9?q=80&w=1964&auto=format&fit=crop",
-    "roomType": "Beachfront Villa",
+    "roomType": { "en": "Beachfront Villa", "ar": "فيلا على الشاطئ" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 15, "name": "Private Pool", "description": "Enjoy a private pool with a stunning view." },
-      { "id": 16, "name": "Personal Butler", "description": "A dedicated butler for all your needs." }
+      { "id": 15, "name": { "en": "Private Pool", "ar": "مسبح خاص" }, "description": { "en": "Enjoy a private pool with a stunning view.", "ar": "استمتع بمسبح خاص مع إطلالة خلابة." } },
+      { "id": 16, "name": { "en": "Personal Butler", "ar": "خادم شخصي" }, "description": { "en": "A dedicated butler for all your needs.", "ar": "خادم شخصي مخصص لجميع احتياجاتك." } }
     ],
     "price": 600,
     "availability": true
@@ -153,12 +153,12 @@
     "roomId": 402,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Lagoon Suite",
+    "roomType": { "en": "Lagoon Suite", "ar": "جناح البحيرة" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 17, "name": "Sea View", "description": "Direct view of the lagoon." },
-      { "id": 18, "name": "Jacuzzi", "description": "Private in-room jacuzzi." }
+      { "id": 17, "name": { "en": "Sea View", "ar": "إطلالة بحرية" }, "description": { "en": "Direct view of the lagoon.", "ar": "إطلالة مباشرة على البحيرة." } },
+      { "id": 18, "name": { "en": "Jacuzzi", "ar": "جاكوزي" }, "description": { "en": "Private in-room jacuzzi.", "ar": "جاكوزي خاص في الغرفة." } }
     ],
     "price": 520,
     "availability": false
@@ -168,11 +168,11 @@
     "roomId": 403,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Garden Bungalow",
+    "roomType": { "en": "Garden Bungalow", "ar": "بنغل الحديقة" },
     "capacityOfAdults": 3,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 19, "name": "Outdoor Seating", "description": "Private terrace seating area." }
+      { "id": 19, "name": { "en": "Outdoor Seating", "ar": "جلسة خارجية" }, "description": { "en": "Private terrace seating area.", "ar": "منطقة جلوس خاصة على التراس." } }
     ],
     "price": 430,
     "availability": false
@@ -183,12 +183,12 @@
     "roomId": 501,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1611440691786-2d3b765a60e3?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Skyline Suite",
+    "roomType": { "en": "Skyline Suite", "ar": "جناح الأفق" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 20, "name": "Rooftop Bar", "description": "Enjoy cocktails with an amazing city view." },
-      { "id": 21, "name": "Smart Home", "description": "Rooms equipped with smart home technology." }
+      { "id": 20, "name": { "en": "Rooftop Bar", "ar": "بار على السطح" }, "description": { "en": "Enjoy cocktails with an amazing city view.", "ar": "استمتع بالكوكتيلات مع إطلالة رائعة على المدينة." } },
+      { "id": 21, "name": { "en": "Smart Home", "ar": "منزل ذكي" }, "description": { "en": "Rooms equipped with smart home technology.", "ar": "غرف مجهزة بتقنية المنزل الذكي." } }
     ],
     "price": 350,
     "availability": true
@@ -198,12 +198,12 @@
     "roomId": 502,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Executive Room",
+    "roomType": { "en": "Executive Room", "ar": "غرفة تنفيذية" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
     "amenities": [
-      { "id": 22, "name": "Work Desk", "description": "Dedicated work-friendly desk." },
-      { "id": 23, "name": "Coffee Machine", "description": "Premium in-room coffee." }
+      { "id": 22, "name": { "en": "Work Desk", "ar": "مكتب عمل" }, "description": { "en": "Dedicated work-friendly desk.", "ar": "مكتب عمل مخصص ومريح." } },
+      { "id": 23, "name": { "en": "Coffee Machine", "ar": "ماكينة قهوة" }, "description": { "en": "Premium in-room coffee.", "ar": "قهوة فاخرة في الغرفة." } }
     ],
     "price": 310,
     "availability": true
@@ -213,11 +213,11 @@
     "roomId": 503,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Family Suite",
+    "roomType": { "en": "Family Suite", "ar": "جناح عائلي" },
     "capacityOfAdults": 4,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 24, "name": "Living Area", "description": "Separate living area for families." }
+      { "id": 24, "name": { "en": "Living Area", "ar": "منطقة معيشة" }, "description": { "en": "Separate living area for families.", "ar": "منطقة معيشة منفصلة للعائلات." } }
     ],
     "price": 420,
     "availability": true
@@ -228,12 +228,12 @@
     "roomId": 601,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1612231393559-9414dc467ef7?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Desert Suite",
+    "roomType": { "en": "Desert Suite", "ar": "جناح الصحراء" },
     "capacityOfAdults": 4,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 25, "name": "Heated Pool", "description": "A luxurious heated pool for year-round relaxation." },
-      { "id": 26, "name": "Fire Pit", "description": "Gather around the fire pit for a cozy evening." }
+      { "id": 25, "name": { "en": "Heated Pool", "ar": "مسبح مُدفأ" }, "description": { "en": "A luxurious heated pool for year-round relaxation.", "ar": "مسبح مُدفأ فاخر للاسترخاء على مدار العام." } },
+      { "id": 26, "name": { "en": "Fire Pit", "ar": "حفرة نار" }, "description": { "en": "Gather around the fire pit for a cozy evening.", "ar": "اجتمعوا حول حفرة النار لأمسية مريحة." } }
     ],
     "price": 220,
     "availability": false
@@ -243,12 +243,12 @@
     "roomId": 602,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Oasis Room",
+    "roomType": { "en": "Oasis Room", "ar": "غرفة الواحة" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 27, "name": "Patio", "description": "Private outdoor sitting area." },
-      { "id": 28, "name": "Mini Bar", "description": "In-room refreshments." }
+      { "id": 27, "name": { "en": "Patio", "ar": "فناء" }, "description": { "en": "Private outdoor sitting area.", "ar": "منطقة جلوس خارجية خاصة." } },
+      { "id": 28, "name": { "en": "Mini Bar", "ar": "ميني بار" }, "description": { "en": "In-room refreshments.", "ar": "مرطبات في الغرفة." } }
     ],
     "price": 200,
     "availability": true
@@ -258,11 +258,11 @@
     "roomId": 603,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Family Desert Room",
+    "roomType": { "en": "Family Desert Room", "ar": "غرفة صحراوية عائلية" },
     "capacityOfAdults": 5,
     "capacityOfChildren": 3,
     "amenities": [
-      { "id": 29, "name": "Large Lounge", "description": "Extra space for family comfort." }
+      { "id": 29, "name": { "en": "Large Lounge", "ar": "صالة كبيرة" }, "description": { "en": "Extra space for family comfort.", "ar": "مساحة إضافية لراحة العائلة." } }
     ],
     "price": 320,
     "availability": false
@@ -273,11 +273,11 @@
     "roomId": 701,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1611095459865-47682ae3c41c?q=80&w=2070&auto=format&fit=crop",
-    "roomType": "Oceanfront Room",
+    "roomType": { "en": "Oceanfront Room", "ar": "غرفة واجهة المحيط" },
     "capacityOfAdults": 3,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 30, "name": "Beach Access", "description": "Direct access to the beach from your room." }
+      { "id": 30, "name": { "en": "Beach Access", "ar": "وصول للشاطئ" }, "description": { "en": "Direct access to the beach from your room.", "ar": "وصول مباشر للشاطئ من غرفتك." } }
     ],
     "price": 180,
     "availability": true
@@ -287,12 +287,12 @@
     "roomId": 702,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Seaside Balcony Room",
+    "roomType": { "en": "Seaside Balcony Room", "ar": "غرفة شرفة بحرية" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 31, "name": "Balcony", "description": "Balcony with sea breeze." },
-      { "id": 32, "name": "TV", "description": "Flat-screen television." }
+      { "id": 31, "name": { "en": "Balcony", "ar": "شرفة" }, "description": { "en": "Balcony with sea breeze.", "ar": "شرفة مع نسيم البحر." } },
+      { "id": 32, "name": { "en": "TV", "ar": "تلفزيون" }, "description": { "en": "Flat-screen television.", "ar": "تلفزيون بشاشة مسطحة." } }
     ],
     "price": 210,
     "availability": true
@@ -302,11 +302,11 @@
     "roomId": 703,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Family Beach Room",
+    "roomType": { "en": "Family Beach Room", "ar": "غرفة شاطئ عائلية" },
     "capacityOfAdults": 4,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 33, "name": "Extra Space", "description": "More room for family stays." }
+      { "id": 33, "name": { "en": "Extra Space", "ar": "مساحة إضافية" }, "description": { "en": "More room for family stays.", "ar": "مساحة أكبر للإقامات العائلية." } }
     ],
     "price": 260,
     "availability": true
@@ -317,12 +317,12 @@
     "roomId": 801,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1573254485283-cde42629b8c5?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Royal Suite",
+    "roomType": { "en": "Royal Suite", "ar": "الجناح الملكي" },
     "capacityOfAdults": 3,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 34, "name": "Chandelier", "description": "Luxurious crystal chandelier in every room." },
-      { "id": 35, "name": "Jacuzzi", "description": "Relax in a private jacuzzi." }
+      { "id": 34, "name": { "en": "Chandelier", "ar": "ثريا" }, "description": { "en": "Luxurious crystal chandelier in every room.", "ar": "ثريا كريستالية فاخرة في كل غرفة." } },
+      { "id": 35, "name": { "en": "Jacuzzi", "ar": "جاكوزي" }, "description": { "en": "Relax in a private jacuzzi.", "ar": "استرخِ في جاكوزي خاص." } }
     ],
     "price": 700,
     "availability": false
@@ -332,12 +332,12 @@
     "roomId": 802,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Classic Palace Room",
+    "roomType": { "en": "Classic Palace Room", "ar": "غرفة القصر الكلاسيكية" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 36, "name": "Luxury Bedding", "description": "Premium king-size bedding." },
-      { "id": 37, "name": "Marble Bathroom", "description": "Elegant marble bathroom." }
+      { "id": 36, "name": { "en": "Luxury Bedding", "ar": "فراش فاخر" }, "description": { "en": "Premium king-size bedding.", "ar": "فراش فاخر بحجم كينغ." } },
+      { "id": 37, "name": { "en": "Marble Bathroom", "ar": "حمام رخامي" }, "description": { "en": "Elegant marble bathroom.", "ar": "حمام رخامي أنيق." } }
     ],
     "price": 520,
     "availability": true
@@ -347,11 +347,11 @@
     "roomId": 803,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Family Heritage Suite",
+    "roomType": { "en": "Family Heritage Suite", "ar": "جناح التراث العائلي" },
     "capacityOfAdults": 4,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 38, "name": "Large Sitting Area", "description": "Spacious seating for family stays." }
+      { "id": 38, "name": { "en": "Large Sitting Area", "ar": "منطقة جلوس كبيرة" }, "description": { "en": "Spacious seating for family stays.", "ar": "مساحة جلوس واسعة للإقامات العائلية." } }
     ],
     "price": 610,
     "availability": true
@@ -362,12 +362,12 @@
     "roomId": 901,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1642455721185-ddb96935b001?q=80&w=1935&auto=format&fit=crop",
-    "roomType": "Lakeview Room",
+    "roomType": { "en": "Lakeview Room", "ar": "غرفة إطلالة البحيرة" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 39, "name": "Fishing", "description": "Enjoy fishing on the lake." },
-      { "id": 40, "name": "Boating", "description": "Rent a boat and enjoy the peaceful waters." }
+      { "id": 39, "name": { "en": "Fishing", "ar": "صيد السمك" }, "description": { "en": "Enjoy fishing on the lake.", "ar": "استمتع بصيد السمك في البحيرة." } },
+      { "id": 40, "name": { "en": "Boating", "ar": "ركوب القوارب" }, "description": { "en": "Rent a boat and enjoy the peaceful waters.", "ar": "استأجر قارباً واستمتع بالمياه الهادئة." } }
     ],
     "price": 300,
     "availability": false
@@ -377,12 +377,12 @@
     "roomId": 902,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Premium Lake Suite",
+    "roomType": { "en": "Premium Lake Suite", "ar": "جناح البحيرة المتميز" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 41, "name": "Balcony", "description": "Private balcony overlooking the lake." },
-      { "id": 42, "name": "Coffee Corner", "description": "In-room tea and coffee setup." }
+      { "id": 41, "name": { "en": "Balcony", "ar": "شرفة" }, "description": { "en": "Private balcony overlooking the lake.", "ar": "شرفة خاصة تطل على البحيرة." } },
+      { "id": 42, "name": { "en": "Coffee Corner", "ar": "ركن القهوة" }, "description": { "en": "In-room tea and coffee setup.", "ar": "تجهيزات شاي وقهوة في الغرفة." } }
     ],
     "price": 340,
     "availability": true
@@ -392,11 +392,11 @@
     "roomId": 903,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Family Lake Room",
+    "roomType": { "en": "Family Lake Room", "ar": "غرفة البحيرة العائلية" },
     "capacityOfAdults": 4,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 43, "name": "Dining Nook", "description": "Small in-room dining area." }
+      { "id": 43, "name": { "en": "Dining Nook", "ar": "ركن الطعام" }, "description": { "en": "Small in-room dining area.", "ar": "منطقة طعام صغيرة في الغرفة." } }
     ],
     "price": 390,
     "availability": true
@@ -407,12 +407,12 @@
     "roomId": 1001,
     "roomNumber": 1,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1654347880369-94921d520075?q=80&w=1935&auto=format&fit=crop",
-    "roomType": "Garden Room",
+    "roomType": { "en": "Garden Room", "ar": "غرفة الحديقة" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 44, "name": "Garden Views", "description": "Enjoy beautiful views of the lush garden." },
-      { "id": 45, "name": "Afternoon Tea", "description": "Relax with an afternoon tea in the garden." }
+      { "id": 44, "name": { "en": "Garden Views", "ar": "إطلالات على الحديقة" }, "description": { "en": "Enjoy beautiful views of the lush garden.", "ar": "استمتع بإطلالات جميلة على الحديقة الخضراء." } },
+      { "id": 45, "name": { "en": "Afternoon Tea", "ar": "شاي بعد الظهر" }, "description": { "en": "Relax with an afternoon tea in the garden.", "ar": "استرخِ مع شاي بعد الظهر في الحديقة." } }
     ],
     "price": 280,
     "availability": true
@@ -422,12 +422,12 @@
     "roomId": 1002,
     "roomNumber": 2,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Veranda Room",
+    "roomType": { "en": "Veranda Room", "ar": "غرفة الشرفة" },
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
     "amenities": [
-      { "id": 46, "name": "Private Veranda", "description": "Quiet veranda with seating." },
-      { "id": 47, "name": "Mini Fridge", "description": "Convenient in-room mini fridge." }
+      { "id": 46, "name": { "en": "Private Veranda", "ar": "شرفة خاصة" }, "description": { "en": "Quiet veranda with seating.", "ar": "شرفة هادئة مع مقاعد." } },
+      { "id": 47, "name": { "en": "Mini Fridge", "ar": "ثلاجة صغيرة" }, "description": { "en": "Convenient in-room mini fridge.", "ar": "ثلاجة صغيرة مريحة في الغرفة." } }
     ],
     "price": 260,
     "availability": false
@@ -437,11 +437,11 @@
     "roomId": 1003,
     "roomNumber": 3,
     "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
-    "roomType": "Family Manor Suite",
+    "roomType": { "en": "Family Manor Suite", "ar": "جناح القصر العائلي" },
     "capacityOfAdults": 4,
     "capacityOfChildren": 2,
     "amenities": [
-      { "id": 48, "name": "Large Wardrobe", "description": "Spacious storage for longer stays." }
+      { "id": 48, "name": { "en": "Large Wardrobe", "ar": "خزانة ملابس كبيرة" }, "description": { "en": "Spacious storage for longer stays.", "ar": "مساحة تخزين واسعة للإقامات الطويلة." } }
     ],
     "price": 360,
     "availability": true

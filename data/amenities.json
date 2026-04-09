@@ -1,52 +1,82 @@
 [
   {
     "id": 1,
-    "name": "Free Wi-Fi",
-    "description": "Stay connected with high-speed internet throughout the room."
+    "name": { "en": "Free Wi-Fi", "ar": "واي فاي مجاني" },
+    "description": {
+      "en": "Stay connected with high-speed internet throughout the room.",
+      "ar": "ابقَ متصلاً بإنترنت عالي السرعة في جميع أنحاء الغرفة."
+    }
   },
   {
     "id": 2,
-    "name": "Air Conditioning",
-    "description": "Maintain the perfect room temperature with air conditioning."
+    "name": { "en": "Air Conditioning", "ar": "تكييف هواء" },
+    "description": {
+      "en": "Maintain the perfect room temperature with air conditioning.",
+      "ar": "حافظ على درجة حرارة مثالية للغرفة مع التكييف."
+    }
   },
   {
     "id": 3,
-    "name": "Mini Bar",
-    "description": "A fully stocked mini bar with snacks and beverages."
+    "name": { "en": "Mini Bar", "ar": "ميني بار" },
+    "description": {
+      "en": "A fully stocked mini bar with snacks and beverages.",
+      "ar": "ميني بار مجهز بالكامل بالوجبات الخفيفة والمشروبات."
+    }
   },
   {
     "id": 4,
-    "name": "Flat-Screen TV",
-    "description": "Enjoy your favorite shows on a large flat-screen television."
+    "name": { "en": "Flat-Screen TV", "ar": "تلفزيون بشاشة مسطحة" },
+    "description": {
+      "en": "Enjoy your favorite shows on a large flat-screen television.",
+      "ar": "استمتع بمشاهدة برامجك المفضلة على تلفزيون بشاشة مسطحة كبيرة."
+    }
   },
   {
     "id": 5,
-    "name": "Coffee Maker",
-    "description": "Brew your own coffee with an in-room coffee maker."
+    "name": { "en": "Coffee Maker", "ar": "ماكينة قهوة" },
+    "description": {
+      "en": "Brew your own coffee with an in-room coffee maker.",
+      "ar": "حضّر قهوتك الخاصة مع ماكينة القهوة في الغرفة."
+    }
   },
   {
     "id": 6,
-    "name": "Safe",
-    "description": "Store your valuables in a secure in-room safe."
+    "name": { "en": "Safe", "ar": "خزنة" },
+    "description": {
+      "en": "Store your valuables in a secure in-room safe.",
+      "ar": "احفظ مقتنياتك الثمينة في خزنة آمنة داخل الغرفة."
+    }
   },
   {
     "id": 7,
-    "name": "Complimentary Toiletries",
-    "description": "A selection of toiletries including shampoo, conditioner, and soap."
+    "name": { "en": "Complimentary Toiletries", "ar": "أدوات نظافة مجانية" },
+    "description": {
+      "en": "A selection of toiletries including shampoo, conditioner, and soap.",
+      "ar": "مجموعة مختارة من أدوات النظافة تشمل الشامبو والبلسم والصابون."
+    }
   },
   {
     "id": 8,
-    "name": "Bathtub",
-    "description": "Relax in a spacious bathtub with hot water available."
+    "name": { "en": "Bathtub", "ar": "حوض استحمام" },
+    "description": {
+      "en": "Relax in a spacious bathtub with hot water available.",
+      "ar": "استرخِ في حوض استحمام واسع مع توفر الماء الساخن."
+    }
   },
   {
     "id": 9,
-    "name": "Desk and Chair",
-    "description": "Work in comfort with a dedicated desk and chair."
+    "name": { "en": "Desk and Chair", "ar": "مكتب وكرسي" },
+    "description": {
+      "en": "Work in comfort with a dedicated desk and chair.",
+      "ar": "اعمل براحة مع مكتب وكرسي مخصصين."
+    }
   },
   {
     "id": 10,
-    "name": "Slippers",
-    "description": "Enjoy the comfort of complimentary slippers."
+    "name": { "en": "Slippers", "ar": "شبشب" },
+    "description": {
+      "en": "Enjoy the comfort of complimentary slippers.",
+      "ar": "استمتع براحة الشبشب المجاني."
+    }
   }
 ]

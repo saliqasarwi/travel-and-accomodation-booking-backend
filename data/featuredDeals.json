@@ -4,11 +4,17 @@
     "originalRoomPrice": 200.0,
     "discount": 20.0,
     "finalPrice": 180.0,
-    "cityName": "New York",
-    "hotelName": "Grand Plaza Hotel",
+    "cityName": { "en": "New York", "ar": "نيويورك" },
+    "hotelName": { "en": "Grand Plaza Hotel", "ar": "فندق غراند بلازا" },
     "hotelStarRating": 5,
-    "title": "Luxury Stay in the Heart of NYC",
-    "description": "Enjoy a luxurious stay with top-notch amenities and breathtaking views of the city skyline.",
+    "title": {
+      "en": "Luxury Stay in the Heart of NYC",
+      "ar": "إقامة فاخرة في قلب نيويورك"
+    },
+    "description": {
+      "en": "Enjoy a luxurious stay with top-notch amenities and breathtaking views of the city skyline.",
+      "ar": "استمتع بإقامة فاخرة مع وسائل راحة من الدرجة الأولى وإطلالات خلابة على أفق المدينة."
+    },
     "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/square240/216159271.webp?k=4978c597cdd4ee4a7f9d01af57b62f096d7c2a1e8fb94eb15862d91262b41677&o="
   },
   {
@@ -16,11 +22,17 @@
     "originalRoomPrice": 150.0,
     "discount": 10.0,
     "finalPrice": 135.0,
-    "cityName": "Los Angeles",
-    "hotelName": "Sunset Boulevard Hotel",
+    "cityName": { "en": "Los Angeles", "ar": "لوس أنجلوس" },
+    "hotelName": { "en": "Sunset Boulevard Hotel", "ar": "فندق صنسيت بوليفارد" },
     "hotelStarRating": 4,
-    "title": "Exclusive Deal in LA",
-    "description": "Book now and save on this elegant and modern hotel near Hollywood attractions.",
+    "title": {
+      "en": "Exclusive Deal in LA",
+      "ar": "عرض حصري في لوس أنجلوس"
+    },
+    "description": {
+      "en": "Book now and save on this elegant and modern hotel near Hollywood attractions.",
+      "ar": "احجز الآن ووفّر في هذا الفندق الأنيق والحديث بالقرب من معالم هوليوود."
+    },
     "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/412091492.jpg?k=d0583ac4503a6ae97c0d8427d4c77e3610ecc4bf8dfb045b2194dbe5c1125736&o=&hp=1"
   },
   {
@@ -28,11 +40,17 @@
     "originalRoomPrice": 120.0,
     "discount": 15.0,
     "finalPrice": 102.0,
-    "cityName": "Miami",
-    "hotelName": "Ocean View Resort",
+    "cityName": { "en": "Miami", "ar": "ميامي" },
+    "hotelName": { "en": "Ocean View Resort", "ar": "منتجع أوشن فيو" },
     "hotelStarRating": 3,
-    "title": "Beachfront Escape with a Special Discount",
-    "description": "Relax and unwind at this beachfront resort with stunning ocean views.",
+    "title": {
+      "en": "Beachfront Escape with a Special Discount",
+      "ar": "إجازة على الشاطئ بخصم مميز"
+    },
+    "description": {
+      "en": "Relax and unwind at this beachfront resort with stunning ocean views.",
+      "ar": "استرخِ واستمتع في هذا المنتجع على الشاطئ مع إطلالات بحرية خلابة."
+    },
     "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max300/486888384.jpg?k=d72fd1f299c643d432144d8f4ec6147ffe9612d52035b06f08b7f5cf7d20952e&o="
   }
 ]

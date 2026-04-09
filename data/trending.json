@@ -1,31 +1,42 @@
 [
   {
     "cityId": 1,
-    "cityName": "Paris",
-    "countryName": "France",
-    "description": "The city of lights and love, known for the Eiffel Tower and rich culture.",
+    "cityName": { "en": "Paris", "ar": "باريس" },
+    "countryName": { "en": "France", "ar": "فرنسا" },
+    "description": {
+      "en": "The city of lights and love, known for the Eiffel Tower and rich culture.",
+      "ar": "مدينة الأنوار والحب، المشهورة ببرج إيفل وثقافتها الغنية."
+    },
     "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg"
   },
   {
     "cityId": 2,
-    "cityName": "Tokyo",
-    "countryName": "Japan",
-    "description": "A bustling metropolis blending ultramodern and traditional Japanese culture.",
+    "cityName": { "en": "Tokyo", "ar": "طوكيو" },
+    "countryName": { "en": "Japan", "ar": "اليابان" },
+    "description": {
+      "en": "A bustling metropolis blending ultramodern and traditional Japanese culture.",
+      "ar": "مدينة نابضة بالحياة تمزج بين الحداثة الفائقة والثقافة اليابانية التقليدية."
+    },
     "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/1920px-Skyscrapers_of_Shinjuku_2009_January.jpg"
   },
   {
     "cityId": 3,
-    "cityName": "New York",
-    "countryName": "USA",
-    "description": "The city that never sleeps, home to Times Square and Central Park.",
+    "cityName": { "en": "New York", "ar": "نيويورك" },
+    "countryName": { "en": "USA", "ar": "الولايات المتحدة" },
+    "description": {
+      "en": "The city that never sleeps, home to Times Square and Central Park.",
+      "ar": "المدينة التي لا تنام، موطن تايمز سكوير وسنترال بارك."
+    },
     "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg/1280px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg"
+  },
+  {
+    "cityId": 4,
+    "cityName": { "en": "London", "ar": "لندن" },
+    "countryName": { "en": "United Kingdom", "ar": "المملكة المتحدة" },
+    "description": {
+      "en": "A historic capital famous for landmarks like Big Ben, the Tower of London, and Buckingham Palace.",
+      "ar": "عاصمة تاريخية مشهورة بمعالم مثل بيغ بن وبرج لندن وقصر باكنغهام."
+    },
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/London_Montage_L.jpg"
   }
-  
-,    {
-      "cityId": 4,
-      "cityName": "London",
-      "countryName": "United Kingdom",
-      "description": "A historic capital famous for landmarks like Big Ben, the Tower of London, and Buckingham Palace.",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/London_Montage_L.jpg"
-    }
-  ]
+]
