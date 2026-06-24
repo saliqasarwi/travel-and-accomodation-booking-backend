@@ -5,7 +5,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 // const bodyParser = require("body-parser");
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const swaggerJSDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
@@ -476,9 +476,7 @@ app.get("/api/admin/navigation", (req, res) => {
     { label: "Rooms", path: "/admin/rooms" },
   ]);
 });
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+
 app.get("/api/profile", (req, res) => {
   const profile = getJsonData("profile.json");
   res.json(profile);
@@ -496,6 +494,10 @@ app.put("/api/profile", (req, res) => {
   fs.writeFileSync(filePath, JSON.stringify(updated, null, 2), "utf8");
 
   res.json(updated);
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
 
 /**

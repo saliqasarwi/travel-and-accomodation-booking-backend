@@ -1,12 +1,12 @@
 [
   {
     "id": 4,
-    "name": { "en": "London", "ar": "لندن" },
-    "country": { "en": "United Kingdom", "ar": "المملكة المتحدة" },
-    "postOffice": { "en": "London Chief Office", "ar": "مكتب بريد لندن الرئيسي" },
-    "numberOfHotels": 125,
+    "name": "London",
+    "country": "United Kingdom",
+    "postOffice": "London Chief Office",
+    "numberOfHotels": 124,
     "createdAt": "2023-05-12T09:15:30Z",
-    "modifiedAt": "2026-03-23T02:15:56.708Z",
+    "modifiedAt": "2026-06-24T12:53:51.539Z",
     "description": {
       "en": "The capital of England, famous for its historical landmarks, museums, and theaters.",
       "ar": "عاصمة إنجلترا، مشهورة بمعالمها التاريخية ومتاحفها ومسارحها."
@@ -14,9 +14,18 @@
   },
   {
     "id": 5,
-    "name": { "en": "Rome", "ar": "روما" },
-    "country": { "en": "Italy", "ar": "إيطاليا" },
-    "postOffice": { "en": "Roma Centro", "ar": "مركز بريد روما" },
+    "name": {
+      "en": "Rome",
+      "ar": "روما"
+    },
+    "country": {
+      "en": "Italy",
+      "ar": "إيطاليا"
+    },
+    "postOffice": {
+      "en": "Roma Centro",
+      "ar": "مركز بريد روما"
+    },
     "numberOfHotels": 129,
     "createdAt": "2023-06-20T11:40:00Z",
     "modifiedAt": "2026-03-05T22:24:35.739Z",
@@ -27,9 +36,18 @@
   },
   {
     "id": 6,
-    "name": { "en": "Paris", "ar": "باريس" },
-    "country": { "en": "France", "ar": "فرنسا" },
-    "postOffice": { "en": "Paris-Louvre", "ar": "بريد باريس-اللوفر" },
+    "name": {
+      "en": "Paris",
+      "ar": "باريس"
+    },
+    "country": {
+      "en": "France",
+      "ar": "فرنسا"
+    },
+    "postOffice": {
+      "en": "Paris-Louvre",
+      "ar": "بريد باريس-اللوفر"
+    },
     "numberOfHotels": 1850,
     "createdAt": "2023-04-08T08:30:15Z",
     "modifiedAt": "2026-03-01T10:05:12Z",
@@ -40,9 +58,18 @@
   },
   {
     "id": 7,
-    "name": { "en": "Tokyo", "ar": "طوكيو" },
-    "country": { "en": "Japan", "ar": "اليابان" },
-    "postOffice": { "en": "Tokyo Central Post Office", "ar": "مكتب بريد طوكيو المركزي" },
+    "name": {
+      "en": "Tokyo",
+      "ar": "طوكيو"
+    },
+    "country": {
+      "en": "Japan",
+      "ar": "اليابان"
+    },
+    "postOffice": {
+      "en": "Tokyo Central Post Office",
+      "ar": "مكتب بريد طوكيو المركزي"
+    },
     "numberOfHotels": 210,
     "createdAt": "2024-01-15T03:20:00Z",
     "modifiedAt": "2026-04-07T03:19:11.857Z",
@@ -53,9 +80,18 @@
   },
   {
     "id": 8,
-    "name": { "en": "New York", "ar": "نيويورك" },
-    "country": { "en": "United States", "ar": "الولايات المتحدة" },
-    "postOffice": { "en": "James A. Farley Building", "ar": "مبنى جيمس أ. فارلي" },
+    "name": {
+      "en": "New York",
+      "ar": "نيويورك"
+    },
+    "country": {
+      "en": "United States",
+      "ar": "الولايات المتحدة"
+    },
+    "postOffice": {
+      "en": "James A. Farley Building",
+      "ar": "مبنى جيمس أ. فارلي"
+    },
     "numberOfHotels": 740,
     "createdAt": "2023-09-30T14:10:55Z",
     "modifiedAt": "2026-01-20T19:30:01Z",
@@ -66,9 +102,18 @@
   },
   {
     "id": 9,
-    "name": { "en": "Istanbul", "ar": "إسطنبول" },
-    "country": { "en": "Turkey", "ar": "تركيا" },
-    "postOffice": { "en": "Istanbul Sirkeci", "ar": "بريد إسطنبول سيركجي" },
+    "name": {
+      "en": "Istanbul",
+      "ar": "إسطنبول"
+    },
+    "country": {
+      "en": "Turkey",
+      "ar": "تركيا"
+    },
+    "postOffice": {
+      "en": "Istanbul Sirkeci",
+      "ar": "بريد إسطنبول سيركجي"
+    },
     "numberOfHotels": 1450,
     "createdAt": "2024-03-10T10:25:40Z",
     "modifiedAt": "2025-12-12T13:55:19Z",
@@ -79,9 +124,18 @@
   },
   {
     "id": 10,
-    "name": { "en": "Bangkok", "ar": "بانكوك" },
-    "country": { "en": "Thailand", "ar": "تايلاند" },
-    "postOffice": { "en": "Bangkok General Post Office", "ar": "مكتب بريد بانكوك العام" },
+    "name": {
+      "en": "Bangkok",
+      "ar": "بانكوك"
+    },
+    "country": {
+      "en": "Thailand",
+      "ar": "تايلاند"
+    },
+    "postOffice": {
+      "en": "Bangkok General Post Office",
+      "ar": "مكتب بريد بانكوك العام"
+    },
     "numberOfHotels": 3200,
     "createdAt": "2023-07-05T07:45:20Z",
     "modifiedAt": "2026-03-02T11:15:50Z",
@@ -92,9 +146,18 @@
   },
   {
     "id": 11,
-    "name": { "en": "Dubai", "ar": "دبي" },
-    "country": { "en": "United Arab Emirates", "ar": "الإمارات العربية المتحدة" },
-    "postOffice": { "en": "Dubai Central Post Office", "ar": "مكتب بريد دبي المركزي" },
+    "name": {
+      "en": "Dubai",
+      "ar": "دبي"
+    },
+    "country": {
+      "en": "United Arab Emirates",
+      "ar": "الإمارات العربية المتحدة"
+    },
+    "postOffice": {
+      "en": "Dubai Central Post Office",
+      "ar": "مكتب بريد دبي المركزي"
+    },
     "numberOfHotels": 1800,
     "createdAt": "2024-02-14T13:10:00Z",
     "modifiedAt": "2026-01-10T09:30:15Z",
@@ -105,9 +168,18 @@
   },
   {
     "id": 12,
-    "name": { "en": "Hong Kong", "ar": "هونغ كونغ" },
-    "country": { "en": "Hong Kong", "ar": "هونغ كونغ" },
-    "postOffice": { "en": "Hong Kong General Post Office", "ar": "مكتب بريد هونغ كونغ العام" },
+    "name": {
+      "en": "Hong Kong",
+      "ar": "هونغ كونغ"
+    },
+    "country": {
+      "en": "Hong Kong",
+      "ar": "هونغ كونغ"
+    },
+    "postOffice": {
+      "en": "Hong Kong General Post Office",
+      "ar": "مكتب بريد هونغ كونغ العام"
+    },
     "numberOfHotels": 1600,
     "createdAt": "2023-11-22T04:55:10Z",
     "modifiedAt": "2026-02-15T18:40:30Z",
@@ -118,9 +190,18 @@
   },
   {
     "id": 13,
-    "name": { "en": "Barcelona", "ar": "برشلونة" },
-    "country": { "en": "Spain", "ar": "إسبانيا" },
-    "postOffice": { "en": "Barcelona Central Post Office", "ar": "مكتب بريد برشلونة المركزي" },
+    "name": {
+      "en": "Barcelona",
+      "ar": "برشلونة"
+    },
+    "country": {
+      "en": "Spain",
+      "ar": "إسبانيا"
+    },
+    "postOffice": {
+      "en": "Barcelona Central Post Office",
+      "ar": "مكتب بريد برشلونة المركزي"
+    },
     "numberOfHotels": 950,
     "createdAt": "2024-05-30T16:20:45Z",
     "modifiedAt": "2025-10-08T12:25:00Z",
@@ -131,9 +212,18 @@
   },
   {
     "id": 14,
-    "name": { "en": "Singapore", "ar": "سنغافورة" },
-    "country": { "en": "Singapore", "ar": "سنغافورة" },
-    "postOffice": { "en": "Singapore Post Centre", "ar": "مركز بريد سنغافورة" },
+    "name": {
+      "en": "Singapore",
+      "ar": "سنغافورة"
+    },
+    "country": {
+      "en": "Singapore",
+      "ar": "سنغافورة"
+    },
+    "postOffice": {
+      "en": "Singapore Post Centre",
+      "ar": "مركز بريد سنغافورة"
+    },
     "numberOfHotels": 1400,
     "createdAt": "2023-10-18T10:05:55Z",
     "modifiedAt": "2026-03-03T08:50:22Z",
@@ -144,9 +234,18 @@
   },
   {
     "id": 15,
-    "name": { "en": "Sydney", "ar": "سيدني" },
-    "country": { "en": "Australia", "ar": "أستراليا" },
-    "postOffice": { "en": "Sydney General Post Office", "ar": "مكتب بريد سيدني العام" },
+    "name": {
+      "en": "Sydney",
+      "ar": "سيدني"
+    },
+    "country": {
+      "en": "Australia",
+      "ar": "أستراليا"
+    },
+    "postOffice": {
+      "en": "Sydney General Post Office",
+      "ar": "مكتب بريد سيدني العام"
+    },
     "numberOfHotels": 1100,
     "createdAt": "2024-04-01T02:30:00Z",
     "modifiedAt": "2025-09-20T14:15:40Z",

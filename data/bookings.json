@@ -2,7 +2,10 @@
   {
     "bookingId": 1775602522057,
     "confirmationNumber": "CNF-1775602522057",
-    "bookingStatus": { "en": "Confirmed", "ar": "مؤكد" },
+    "bookingStatus": {
+      "en": "Confirmed",
+      "ar": "مؤكد"
+    },
     "createdAt": "2026-04-07T22:55:22.057Z",
     "request": {
       "guestInfo": {
@@ -24,10 +27,19 @@
       "items": [
         {
           "hotelId": 1,
-          "hotelName": { "en": "Sunset Resort", "ar": "منتجع الغروب" },
-          "cityName": { "en": "Bali, Indonesia", "ar": "بالي، إندونيسيا" },
+          "hotelName": {
+            "en": "Sunset Resort",
+            "ar": "منتجع الغروب"
+          },
+          "cityName": {
+            "en": "Bali, Indonesia",
+            "ar": "بالي، إندونيسيا"
+          },
           "starRating": 5,
-          "roomType": { "en": "Garden View Room", "ar": "غرفة إطلالة الحديقة" },
+          "roomType": {
+            "en": "Garden View Room",
+            "ar": "غرفة إطلالة الحديقة"
+          },
           "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
           "checkInDate": "",
           "checkOutDate": "",
@@ -44,7 +56,10 @@
   {
     "bookingId": 1775609464039,
     "confirmationNumber": "CNF-1775609464039",
-    "bookingStatus": { "en": "Confirmed", "ar": "مؤكد" },
+    "bookingStatus": {
+      "en": "Confirmed",
+      "ar": "مؤكد"
+    },
     "createdAt": "2026-04-08T00:51:04.039Z",
     "request": {
       "guestInfo": {
@@ -66,10 +81,19 @@
       "items": [
         {
           "hotelId": 1,
-          "hotelName": { "en": "Sunset Resort", "ar": "منتجع الغروب" },
-          "cityName": { "en": "Bali, Indonesia", "ar": "بالي، إندونيسيا" },
+          "hotelName": {
+            "en": "Sunset Resort",
+            "ar": "منتجع الغروب"
+          },
+          "cityName": {
+            "en": "Bali, Indonesia",
+            "ar": "بالي، إندونيسيا"
+          },
           "starRating": 5,
-          "roomType": { "en": "Garden View Room", "ar": "غرفة إطلالة الحديقة" },
+          "roomType": {
+            "en": "Garden View Room",
+            "ar": "غرفة إطلالة الحديقة"
+          },
           "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
           "checkInDate": "",
           "checkOutDate": "",
@@ -82,10 +106,19 @@
         },
         {
           "hotelId": 1,
-          "hotelName": { "en": "Sunset Resort", "ar": "منتجع الغروب" },
-          "cityName": { "en": "Bali, Indonesia", "ar": "بالي، إندونيسيا" },
+          "hotelName": {
+            "en": "Sunset Resort",
+            "ar": "منتجع الغروب"
+          },
+          "cityName": {
+            "en": "Bali, Indonesia",
+            "ar": "بالي، إندونيسيا"
+          },
           "starRating": 5,
-          "roomType": { "en": "Standard Room", "ar": "غرفة قياسية" },
+          "roomType": {
+            "en": "Standard Room",
+            "ar": "غرفة قياسية"
+          },
           "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
           "checkInDate": "",
           "checkOutDate": "",
@@ -95,6 +128,175 @@
           "pricePerNight": 280,
           "discount": 0,
           "id": "1|Standard Room|||2|0|1"
+        }
+      ]
+    }
+  },
+  {
+    "bookingId": 1776482946727,
+    "confirmationNumber": "CNF-1776482946727",
+    "bookingStatus": {
+      "en": "Confirmed",
+      "ar": "مؤكد"
+    },
+    "createdAt": "2026-04-18T03:29:06.727Z",
+    "request": {
+      "guestInfo": {
+        "firstName": "Sali",
+        "lastName": "Qasarwi",
+        "email": "sali.qasarwi@gmail.com",
+        "phone": "0592440108"
+      },
+      "paymentInfo": {
+        "method": "pay_at_hotel",
+        "cardNumber": "",
+        "expiry": "",
+        "cvv": "",
+        "cardholderName": ""
+      },
+      "specialRequests": {
+        "notes": ""
+      },
+      "items": [
+        {
+          "hotelId": 1,
+          "hotelName": "Sunset Resort",
+          "cityName": "Bali, Indonesia",
+          "starRating": 5,
+          "roomType": "Standard Room",
+          "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+          "checkInDate": "",
+          "checkOutDate": "",
+          "adults": 2,
+          "children": 0,
+          "numberOfRooms": 1,
+          "pricePerNight": 280,
+          "discount": 0,
+          "id": "1|Standard Room|||2|0|1"
+        },
+        {
+          "hotelId": 1,
+          "hotelName": "Sunset Resort",
+          "cityName": "Bali, Indonesia",
+          "starRating": 5,
+          "roomType": "Garden View Room",
+          "roomPhotoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1887&auto=format&fit=crop",
+          "checkInDate": "",
+          "checkOutDate": "",
+          "adults": 2,
+          "children": 0,
+          "numberOfRooms": 1,
+          "pricePerNight": 380,
+          "discount": 0,
+          "id": "1|Garden View Room|||2|0|1"
+        }
+      ]
+    }
+  },
+  {
+    "bookingId": 1776483318732,
+    "confirmationNumber": "CNF-1776483318732",
+    "bookingStatus": {
+      "en": "Confirmed",
+      "ar": "مؤكد"
+    },
+    "createdAt": "2026-04-18T03:35:18.732Z",
+    "request": {
+      "guestInfo": {
+        "firstName": "Sali",
+        "lastName": "Qasarwi",
+        "email": "sali.qasarwi@gmail.com",
+        "phone": "0592440108"
+      },
+      "paymentInfo": {
+        "method": "pay_at_hotel",
+        "cardNumber": "",
+        "expiry": "",
+        "cvv": "",
+        "cardholderName": ""
+      },
+      "specialRequests": {
+        "notes": ""
+      },
+      "items": [
+        {
+          "hotelId": 10,
+          "hotelName": {
+            "en": "Safari Lodge",
+            "ar": "نزل السفاري"
+          },
+          "cityName": {
+            "en": "Kruger National Park, South Africa",
+            "ar": "حديقة كروغر الوطنية، جنوب أفريقيا"
+          },
+          "starRating": 5,
+          "roomType": {
+            "en": "Garden Room",
+            "ar": "غرفة الحديقة"
+          },
+          "roomPhotoUrl": "https://images.unsplash.com/photo-1654347880369-94921d520075?q=80&w=1935&auto=format&fit=crop",
+          "checkInDate": "",
+          "checkOutDate": "",
+          "adults": 2,
+          "children": 0,
+          "numberOfRooms": 1,
+          "pricePerNight": 280,
+          "discount": 0,
+          "id": "10|[object Object]|||2|0|1"
+        }
+      ]
+    }
+  },
+  {
+    "bookingId": 1782305535926,
+    "confirmationNumber": "CNF-1782305535926",
+    "bookingStatus": {
+      "en": "Confirmed",
+      "ar": "مؤكد"
+    },
+    "createdAt": "2026-06-24T12:52:15.926Z",
+    "request": {
+      "guestInfo": {
+        "firstName": "Sali",
+        "lastName": "Osama",
+        "email": "sali.qasarwi@gmail.com",
+        "phone": "0592440108"
+      },
+      "paymentInfo": {
+        "method": "pay_at_hotel",
+        "cardNumber": "",
+        "expiry": "",
+        "cvv": "",
+        "cardholderName": ""
+      },
+      "specialRequests": {
+        "notes": ""
+      },
+      "items": [
+        {
+          "hotelId": 1,
+          "hotelName": {
+            "en": "Sunset Resort",
+            "ar": "منتجع الغروب"
+          },
+          "cityName": {
+            "en": "Bali, Indonesia",
+            "ar": "بالي، إندونيسيا"
+          },
+          "starRating": 5,
+          "roomType": {
+            "en": "Standard Room",
+            "ar": "غرفة قياسية"
+          },
+          "roomPhotoUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1887&auto=format&fit=crop",
+          "checkInDate": "",
+          "checkOutDate": "",
+          "adults": 2,
+          "children": 0,
+          "numberOfRooms": 1,
+          "pricePerNight": 280,
+          "discount": 0,
+          "id": "1|[object Object]|||2|0|1"
         }
       ]
     }
